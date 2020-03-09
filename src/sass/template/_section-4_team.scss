@@ -1,0 +1,95 @@
+.section-team{
+  padding-top: 70px;
+  background-image: url(/images/sec4/leaf_pattern.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+    &::before{
+      content: url(/images/sec4/blueberries.png);
+      position: absolute;
+      width: 135px;
+      height: 112px;
+      top: -30px;
+      right: 0;
+      z-index: 1;
+    }
+    &::after{
+      content: url(/images/sec4/raspberry.png);
+      position: absolute;
+      width: 104px;
+      height: 114px;
+      bottom: -60px;
+      left: 60px;
+      z-index: 1;
+    }
+}
+.team{
+  display: flex;
+  justify-content: space-between;
+}
+.team__common{
+  width: 100%;
+  margin-right: 20px;
+  text-align: center;
+    &:last-child{
+      margin-right: 0;  
+    }      
+}
+.team__foto{
+  margin-bottom: 26px;
+}
+.team__title{
+  color: $light-black;
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.team__title-name{
+  margin-right: 7px;
+}
+.team__title-down{
+  width: 0; 
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid $green;
+
+    &.active{
+      display: none;
+    }
+}
+.team__title-up{
+  display: none;
+  width: 0; 
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid $green;
+
+    &.active{
+      display: block;
+    }
+}
+.team__hiden{
+  display: none; 
+
+    &.active{
+      display: block;
+    } 
+}
+.team__hiden-title{
+  color: $light-black;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.team__hiden-text{
+  color: $grey;
+  font-size: 18px;
+  font-weight: 300;
+  max-height: 100px;
+  overflow-y: auto;
+}

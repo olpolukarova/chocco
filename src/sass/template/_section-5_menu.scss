@@ -1,0 +1,63 @@
+.section-menu{
+  background-image: url(/images/sec5/fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+}
+.accordeon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex; 
+  overflow: hidden;
+  height: 100vh;
+  width: 65%;
+}
+.accordeon__section{
+  display: flex;
+  position: relative;
+  align-items: stretch;
+
+    &.active .accordeon__section-content{
+      display: block;
+    }
+}
+.accordeon__section-title{  
+  background-repeat: no-repeat;
+  background-size: cover;  
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 500;
+  white-space: nowrap;
+  min-width: 100px;
+  position: relative;
+  cursor: pointer;
+  
+    h3{
+      position: absolute;
+      transform: rotate(-90deg);
+      bottom: 10%;
+      left: 0;
+      right: 0;
+    }
+    &.milk{
+      background-image: url(/images/sec5/milk.png);
+    }
+    &.fruit{
+      background-image: url(/images/sec5/fruit.png);
+    }
+    &.berry{
+      background-image: url(/images/sec5/berry.png);
+    }
+}
+
+.accordeon__section-content{
+  display: none;
+  background-color: #2f3234;
+  opacity: 0.93;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 50px 30px;
+}

@@ -1,0 +1,53 @@
+section.section.section-form#sec8
+    .section-center
+      h2.title.title--form Закажите доставку
+      form.form(action="")
+        .form__column
+          .form__row
+            label.form__label(for="")
+              span.form__subtitle Имя
+              input.form__input(type="text" name='name' placeholder='Ольга' required="required")
+            label.form__label(for="")
+              span.form__subtitle Телефон
+              input.form__input(type="tel" name='tel' placeholder='89022348912' required="required")
+          .form__row
+            label.form__label(for="")
+              span.form__subtitle Улица
+              input.form__input(type="text" required="required")
+          .form__row
+            label.form__label(for="")
+              span.form__subtitle Дом
+              input.form__input(type="text" required="required")
+            label.form__label(for="")
+              span.form__subtitle Корпус
+              input.form__input(type="text" required="required")
+            label.form__label(for="")
+              span.form__subtitle Квартира
+              input.form__input(type="text" required="required")
+            label.form__label(for="")
+              span.form__subtitle Этаж
+              input.form__input(type="text" required="required")
+        .form__column
+          .form__row
+            label.form__label(for="")
+              span.form__subtitle Комментарий
+              textarea.form__textarea.form__input
+          .form__row-mb
+            
+              label.form__radio-label(for="change")
+                input.form__radio-input(type="radio" name='pay')#change
+                span.form__radio-custom
+                span.form__subtitle Потребуется сдача
+            
+              label.form__radio-label(for="pay")
+                input.form__radio-input(type="radio" name='pay' checked)#pay
+                span.form__radio-custom
+                span.form__subtitle Оплата по карте
+            
+              label.form__chec-label(for="chec")
+                input.form__chec-input(type="checkbox" checked)#chec
+                span.form__chec-custom
+                span.form__subtitle Не перезванивать
+          .form__button
+            button.button.button--submit(type='submit') Заказать
+            button.button.button--reset(type='reset') Очистить

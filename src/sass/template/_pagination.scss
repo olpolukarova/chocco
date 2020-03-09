@@ -1,0 +1,31 @@
+.pagination{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 80px;
+}
+.pagination__item{
+  width: 16px;
+  height: 16px;
+  margin-bottom: 5px;
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: 50%;
+    &:last-child{
+      margin-bottom: 0;
+    }
+}
+.pagination__link{
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $white;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+
+}
+.pagination__item--active{
+  border: 1px solid $white;
+}

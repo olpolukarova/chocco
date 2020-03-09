@@ -1,0 +1,93 @@
+.section-comment{
+  padding-top: 60px;
+
+    &::before{
+      position: absolute;
+      content: '';
+      background-image: url(/images/sec6/strawberry.png);
+      background-size: contain;
+      width: 150px;
+      height: 86px;
+      top: 36px;
+      right: 103px;
+      z-index: 1;
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      background-image: url(/images/sec6/berrys.png);
+      background-size: contain;
+      width: 135px;
+      height: 193px;
+      bottom: -10%;
+      z-index: 10;
+    }
+}
+.comment__content-main{
+  position: relative;
+  display: flex;
+  background-color: #f8faf9;
+  padding: 50px;
+  background-image: url(/images/sec6/raspberry.png);
+  background-repeat: no-repeat;
+  background-position: right 0;
+  margin-bottom: 30px;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 40px;
+      border-radius: 0 0 40px 40px;
+      background-color: #ffffff;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+}
+.comment__avatar{
+  width: 254px;
+  height: 260px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+.comment__content-title{
+  color: $light-black;
+  font-size: 30px;
+  font-weight: 500; 
+  margin-bottom: 30px;
+}
+.comment__content-text{
+  color: $grey;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  max-width: 440px;
+}
+.comment__content-name{
+  color: $grey;
+  font-size: 18px;
+  font-weight: 500;
+}
+.comment__switch{
+  text-align: center;
+}
+.comment__switch-link{
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  overflow: hidden;
+  margin-right: 10px;
+    &:last-child{
+      margin-right: 0;
+    }
+}
+.comment__switch-link img{
+  display: block;
+  width: 100%;
+  height: 68px;
+  object-fit: cover;
+}
+.comment__switch-link--active{
+  border: 6px solid $green;
+}

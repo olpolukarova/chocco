@@ -1,0 +1,54 @@
+.header{
+  padding: 25px 0;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu{
+  display: flex;
+}
+.menu__item{  
+  margin-right: 25px;
+  transition: .4s;
+  
+    &:last-child{
+      margin-right: 0;
+    }
+    
+    &:hover .menu__link{
+      transition: .4s;
+      border-bottom: 2px solid #ffffff;
+    }
+}
+.menu__link{
+  border: 2px solid transparent;
+}
+.menu__link, .number{
+  color: $white;
+  font-family: $font;
+  font-size: 18px;
+  font-weight: 400; 
+}
+
+.number{  
+  font-size: 24px;
+  text-transform: uppercase;
+  transition: .4s;
+  border: 2px solid transparent;
+  
+    &:before{
+      content: "";      
+      display: inline-block;
+      margin-right: 6px;  
+      width: 12px;
+      height: 11px;
+      background-image: url(/images/sec1/phone.svg);
+      background-repeat: no-repeat;
+    }
+    &:hover{
+      transition: .4s;
+      border-bottom: 2px solid #ffffff;
+    }
+} 

@@ -1,0 +1,80 @@
+.section{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.section-main{
+  background-color: #61c4d9;
+  background-image: url(/images/sec1/section-background.png);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;  
+    &::after{
+      content: url(/images/sec1/berry.png);
+      position: absolute;
+      bottom: -7vh;
+      right: 14vw;
+      z-index: 1;
+    }
+    // &::before{
+    //   content: url(/images/sec1/leafs.png);
+    //   position: absolute;
+    //   bottom: -7vh;
+    //   left: 7vw;
+    //   z-index: 1;
+    // }
+}
+.section-center--header{
+   top: calc(50% - 100px);  
+}
+.main{
+  max-width: 480px;    
+    &::after{
+      content: url(/images/sec1/bar.png);
+      position: absolute;
+      right: 0;
+      bottom: -78px;
+    }
+}
+.main__subtitle{
+  color: $white;
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 1.1;
+}
+.main__list{
+  display: flex;
+  color: $white;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 70px;
+}
+.main__item{
+  padding-left: 65px;
+  margin-right: 38px;
+  width: 33%;
+  line-height: $font-lineheight;
+    &:last-child{
+      margin-right: 0;
+    }
+}
+.main__item--leaf{
+  background-image: url(/images/sec1/icon_leaf.svg);
+  background-repeat: no-repeat;
+  background-size: 44px 41px ;
+  padding-left: 55px;
+}
+.main__item--car{
+  background-image: url(/images/sec1/icon_car.svg);
+  background-repeat: no-repeat;
+  background-size: 50px 40px;
+  padding-left: 65px;
+}
+.main__item--metre{
+  background-image: url(/images/sec1/icon_metre.svg);
+  background-repeat: no-repeat;
+  background-size: 42px 42px;
+  padding-left: 55px;
+}
