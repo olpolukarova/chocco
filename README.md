@@ -1,5 +1,3 @@
-Olga Polukarova
-***
-Maxim Ivanov
-***
-web_dev beginner
+* Olga Polukarova
+* Maxim Ivanov
+* web_dev beginner
