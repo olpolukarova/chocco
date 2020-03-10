@@ -1,5 +1,5 @@
 .section-form{
-  background-image: url(/images/sec8/pattern.jpg);
+  background-image: url(../images/sec8/pattern.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -97,7 +97,7 @@
   margin-right: 10px;
     &::after{
       content: "";
-      background-image: url(/images/sec8/check.svg);
+      background-image: url(../images/sec8/check.svg);
       position: absolute;
       display: block;
       width: 0px;

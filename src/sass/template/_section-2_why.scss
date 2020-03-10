@@ -1,5 +1,5 @@
 .section-why{
-  background-image: url(/images/sec2/leaf_pattern.png);
+  background-image: url(../images/sec2/leaf_pattern.png);
   background-repeat: no-repeat;
   background-position: 0 center;
 }
@@ -27,7 +27,7 @@
     }
     &::before{
       position: absolute;
-      content: url(/images/sec2/before_ico.svg);
+      content: url(../images/sec2/before_ico.svg);
       top: 20%;
       left: 100%;
     }
@@ -47,15 +47,15 @@
   margin-bottom: 35px;    
 }
 .why__icon--men{
-  background-image: url(/images/sec2/icon_men.svg);
+  background-image: url(../images/sec2/icon_men.svg);
   background-size: 66px;
 }
 .why__icon--smile{
-  background-image: url(/images/sec2/icon_smile.svg);
+  background-image: url(../images/sec2/icon_smile.svg);
   background-size: 70px;
 }
 .why__icon--hand{
-  background-image: url(/images/sec2/icon_hand.svg);
+  background-image: url(../images/sec2/icon_hand.svg);
   background-size: 75px;
 }
 .why__title-inner{

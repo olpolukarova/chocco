@@ -4,7 +4,7 @@
     &::before{
       position: absolute;
       content: '';
-      background-image: url(/images/sec6/strawberry.png);
+      background-image: url(../images/sec6/strawberry.png);
       background-size: contain;
       width: 150px;
       height: 86px;
@@ -15,7 +15,7 @@
     &::after{
       position: absolute;
       content: '';
-      background-image: url(/images/sec6/berrys.png);
+      background-image: url(../images/sec6/berrys.png);
       background-size: contain;
       width: 135px;
       height: 193px;
@@ -28,7 +28,7 @@
   display: flex;
   background-color: #f8faf9;
   padding: 50px;
-  background-image: url(/images/sec6/raspberry.png);
+  background-image: url(../images/sec6/raspberry.png);
   background-repeat: no-repeat;
   background-position: right 0;
   margin-bottom: 30px;
@@ -78,8 +78,13 @@
   border: 6px solid transparent;
   overflow: hidden;
   margin-right: 10px;
+  transition: .4s;
     &:last-child{
       margin-right: 0;
+    }
+    &:hover{
+      border: 6px solid #cfdedb;
+      transition: .4s;
     }
 }
 .comment__switch-link img{

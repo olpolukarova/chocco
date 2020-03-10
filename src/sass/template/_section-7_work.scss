@@ -2,7 +2,7 @@
   background-color: $bg;
 
     &::before{
-      content: url(/images/sec7/leaf_pattern.png);
+      content: url(../images/sec7/leaf_pattern.png);
       position: absolute;
       left: 0;
       top: -25%;
@@ -10,7 +10,7 @@
     }
 
     &:after{
-      content: url(/images/sec7/blackberry.png);
+      content: url(../images/sec7/blackberry.png);
       position: absolute;
       right: 0;
       bottom: -14%;
@@ -25,7 +25,7 @@
   margin: 0 auto;
     
   &::before{
-    content: url(/images/sec7/leaf_left.png);
+    content: url(../images/sec7/leaf_left.png);
     position: absolute;
     width: 72px;
     height: 135px;
@@ -34,7 +34,7 @@
     z-index: 1;
   }
   &::after{
-    content: url(/images/sec7/leaf_right.png);
+    content: url(../images/sec7/leaf_right.png);
     position: absolute;
     width: 90px;
     height: 77px;

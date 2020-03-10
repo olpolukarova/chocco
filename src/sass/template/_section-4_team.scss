@@ -1,10 +1,10 @@
 .section-team{
   padding-top: 70px;
-  background-image: url(/images/sec4/leaf_pattern.png);
+  background-image: url(../images/sec4/leaf_pattern.png);
   background-repeat: no-repeat;
   background-position: right top;
     &::before{
-      content: url(/images/sec4/blueberries.png);
+      content: url(../images/sec4/blueberries.png);
       position: absolute;
       width: 135px;
       height: 112px;
@@ -13,7 +13,7 @@
       z-index: 1;
     }
     &::after{
-      content: url(/images/sec4/raspberry.png);
+      content: url(../images/sec4/raspberry.png);
       position: absolute;
       width: 104px;
       height: 114px;

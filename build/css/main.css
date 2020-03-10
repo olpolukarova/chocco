@@ -319,7 +319,7 @@ path {
     margin-right: 6px;
     width: 12px;
     height: 11px;
-    background-image: url(/images/sec1/phone.svg);
+    background-image: url(../images/sec1/phone.svg);
     background-repeat: no-repeat; }
   .number:hover {
     -webkit-transition: .4s;
@@ -369,14 +369,14 @@ path {
 
 .section-main {
   background-color: #61c4d9;
-  background-image: url(/images/sec1/section-background.png);
+  background-image: url(../images/sec1/section-background.png);
   background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-position: right bottom;
   -webkit-background-size: contain;
           background-size: contain; }
   .section-main::after {
-    content: url(/images/sec1/berry.png);
+    content: url(../images/sec1/berry.png);
     position: absolute;
     bottom: -7vh;
     right: 14vw;
@@ -389,7 +389,7 @@ path {
 .main {
   max-width: 480px; }
   .main::after {
-    content: url(/images/sec1/bar.png);
+    content: url(../images/sec1/bar.png);
     position: absolute;
     right: 0;
     bottom: -78px; }
@@ -420,28 +420,28 @@ path {
     margin-right: 0; }
 
 .main__item--leaf {
-  background-image: url(/images/sec1/icon_leaf.svg);
+  background-image: url(../images/sec1/icon_leaf.svg);
   background-repeat: no-repeat;
   -webkit-background-size: 44px 41px;
           background-size: 44px 41px;
   padding-left: 55px; }
 
 .main__item--car {
-  background-image: url(/images/sec1/icon_car.svg);
+  background-image: url(../images/sec1/icon_car.svg);
   background-repeat: no-repeat;
   -webkit-background-size: 50px 40px;
           background-size: 50px 40px;
   padding-left: 65px; }
 
 .main__item--metre {
-  background-image: url(/images/sec1/icon_metre.svg);
+  background-image: url(../images/sec1/icon_metre.svg);
   background-repeat: no-repeat;
   -webkit-background-size: 42px 42px;
           background-size: 42px 42px;
   padding-left: 55px; }
 
 .section-why {
-  background-image: url(/images/sec2/leaf_pattern.png);
+  background-image: url(../images/sec2/leaf_pattern.png);
   background-repeat: no-repeat;
   background-position: 0 center; }
 
@@ -470,7 +470,7 @@ path {
     margin-right: 0; }
   .why__item::before {
     position: absolute;
-    content: url(/images/sec2/before_ico.svg);
+    content: url(../images/sec2/before_ico.svg);
     top: 20%;
     left: 100%; }
 
@@ -490,17 +490,17 @@ path {
   margin-bottom: 35px; }
 
 .why__icon--men {
-  background-image: url(/images/sec2/icon_men.svg);
+  background-image: url(../images/sec2/icon_men.svg);
   -webkit-background-size: 66px 66px;
           background-size: 66px; }
 
 .why__icon--smile {
-  background-image: url(/images/sec2/icon_smile.svg);
+  background-image: url(../images/sec2/icon_smile.svg);
   -webkit-background-size: 70px 70px;
           background-size: 70px; }
 
 .why__icon--hand {
-  background-image: url(/images/sec2/icon_hand.svg);
+  background-image: url(../images/sec2/icon_hand.svg);
   -webkit-background-size: 75px 75px;
           background-size: 75px; }
 
@@ -517,11 +517,11 @@ path {
 
 .section-team {
   padding-top: 70px;
-  background-image: url(/images/sec4/leaf_pattern.png);
+  background-image: url(../images/sec4/leaf_pattern.png);
   background-repeat: no-repeat;
   background-position: right top; }
   .section-team::before {
-    content: url(/images/sec4/blueberries.png);
+    content: url(../images/sec4/blueberries.png);
     position: absolute;
     width: 135px;
     height: 112px;
@@ -529,7 +529,7 @@ path {
     right: 0;
     z-index: 1; }
   .section-team::after {
-    content: url(/images/sec4/raspberry.png);
+    content: url(../images/sec4/raspberry.png);
     position: absolute;
     width: 104px;
     height: 114px;
@@ -617,7 +617,7 @@ path {
   overflow-y: auto; }
 
 .section-menu {
-  background-image: url(/images/sec5/fon.jpg);
+  background-image: url(../images/sec5/fon.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -668,11 +668,11 @@ path {
     left: 0;
     right: 0; }
   .accordeon__section-title.milk {
-    background-image: url(/images/sec5/milk.png); }
+    background-image: url(../images/sec5/milk.png); }
   .accordeon__section-title.fruit {
-    background-image: url(/images/sec5/fruit.png); }
+    background-image: url(../images/sec5/fruit.png); }
   .accordeon__section-title.berry {
-    background-image: url(/images/sec5/berry.png); }
+    background-image: url(../images/sec5/berry.png); }
 
 .accordeon__section-content {
   display: none;
@@ -689,7 +689,7 @@ path {
   .section-comment::before {
     position: absolute;
     content: '';
-    background-image: url(/images/sec6/strawberry.png);
+    background-image: url(../images/sec6/strawberry.png);
     -webkit-background-size: contain;
             background-size: contain;
     width: 150px;
@@ -700,7 +700,7 @@ path {
   .section-comment::after {
     position: absolute;
     content: '';
-    background-image: url(/images/sec6/berrys.png);
+    background-image: url(../images/sec6/berrys.png);
     -webkit-background-size: contain;
             background-size: contain;
     width: 135px;
@@ -716,7 +716,7 @@ path {
   display: flex;
   background-color: #f8faf9;
   padding: 50px;
-  background-image: url(/images/sec6/raspberry.png);
+  background-image: url(../images/sec6/raspberry.png);
   background-repeat: no-repeat;
   background-position: right 0;
   margin-bottom: 30px; }
@@ -769,9 +769,17 @@ path {
           border-radius: 50%;
   border: 6px solid transparent;
   overflow: hidden;
-  margin-right: 10px; }
+  margin-right: 10px;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; }
   .comment__switch-link:last-child {
     margin-right: 0; }
+  .comment__switch-link:hover {
+    border: 6px solid #cfdedb;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s; }
 
 .comment__switch-link img {
   display: block;
@@ -786,13 +794,13 @@ path {
 .section-work {
   background-color: #f8faf9; }
   .section-work::before {
-    content: url(/images/sec7/leaf_pattern.png);
+    content: url(../images/sec7/leaf_pattern.png);
     position: absolute;
     left: 0;
     top: -25%;
     z-index: 2; }
   .section-work:after {
-    content: url(/images/sec7/blackberry.png);
+    content: url(../images/sec7/blackberry.png);
     position: absolute;
     right: 0;
     bottom: -14%;
@@ -805,7 +813,7 @@ path {
   height: 100%;
   margin: 0 auto; }
   .work::before {
-    content: url(/images/sec7/leaf_left.png);
+    content: url(../images/sec7/leaf_left.png);
     position: absolute;
     width: 72px;
     height: 135px;
@@ -813,7 +821,7 @@ path {
     left: -140px;
     z-index: 1; }
   .work::after {
-    content: url(/images/sec7/leaf_right.png);
+    content: url(../images/sec7/leaf_right.png);
     position: absolute;
     width: 90px;
     height: 77px;
@@ -827,7 +835,7 @@ path {
   cursor: pointer; }
 
 .section-form {
-  background-image: url(/images/sec8/pattern.jpg);
+  background-image: url(../images/sec8/pattern.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
@@ -961,7 +969,7 @@ path {
   margin-right: 10px; }
   .form__chec-custom::after {
     content: "";
-    background-image: url(/images/sec8/check.svg);
+    background-image: url(../images/sec8/check.svg);
     position: absolute;
     display: block;
     width: 0px;

@@ -1,5 +1,5 @@
 .section-menu{
-  background-image: url(/images/sec5/fon.jpg);
+  background-image: url(../images/sec5/fon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 100px;
@@ -41,13 +41,13 @@
       right: 0;
     }
     &.milk{
-      background-image: url(/images/sec5/milk.png);
+      background-image: url(../images/sec5/milk.png);
     }
     &.fruit{
-      background-image: url(/images/sec5/fruit.png);
+      background-image: url(../images/sec5/fruit.png);
     }
     &.berry{
-      background-image: url(/images/sec5/berry.png);
+      background-image: url(../images/sec5/berry.png);
     }
 }
 
