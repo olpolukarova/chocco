@@ -1,14 +1,15 @@
 section.section.section-work#sec7
   .section-center
-    .container
-      h2.title Как мы работаем
-      .work
-        .work__content
-          video.work__video(src="./images/sec7/clams.mp4" controls width="660" height="370" preload="none" poster="./images/sec7/poster.jpg" loop muted)#video-player
-            source(src="video.mp4" type="video/mp4")
-        .work__content
-          .work__elements
-            .work__elements-play
-            input.work__elements-progress(type="range")
-            .work__elements-volume
-              input(type="range")
+    h2.title Как мы работаем
+    .work
+      .work__content
+        video.work__video(src="./images/sec7/clams.mp4" width="660" height="370" preload="none" poster="./images/sec7/poster.jpg" loop muted)#video-player
+          source(src="video.mp4" type="video/mp4")
+      .work__content
+        .work__elements
+          .work__elements-play
+          .work__elements-progress
+            input(type="range")
+          .work__elements-volume
+            .volume-ico
+            input(type="range")

@@ -24,27 +24,33 @@
   height: 100%;
   margin: 0 auto;
     
-  &::before{
-    content: url(../images/sec7/leaf_left.png);
-    position: absolute;
-    width: 72px;
-    height: 135px;
-    bottom: -50px;
-    left: -140px;
-    z-index: 1;
-  }
-  &::after{
-    content: url(../images/sec7/leaf_right.png);
-    position: absolute;
-    width: 90px;
-    height: 77px;
-    top: -50px;
-    z-index: 1;
-  }
+  // &::before{
+  //   content: url(../images/sec7/leaf_left.png);
+  //   position: absolute;
+  //   width: 72px;
+  //   height: 135px;
+  //   bottom: -50px;
+  //   left: -140px;
+  //   z-index: 1;
+  // }
+  // &::after{
+  //   content: url(../images/sec7/leaf_right.png);
+  //   position: absolute;
+  //   width: 90px;
+  //   height: 77px;
+  //   top: -50px;
+  //   right: -87px;
+  //   z-index: 1;
+  // }
 }
 .work__video{
   position: relative;
   width: 100%;
   height: 370px;
   cursor: pointer;
+}
+.work__elements{
+  background-color: #3e3e3e;
+  padding: 7px 20px;
+  display: flex;
 }

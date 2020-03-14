@@ -2,13 +2,15 @@
 html(lang="ru")
   include base/_head
   body(ontouchstart="")
-    include template/_section-1_main
-    include template/_section-2_why
-    include template/_section-4_team
-    include template/_section-5_menu
-    include template/_section-6_comment
-    include template/_section-7_work
-    include template/_section-8_form
-    
+    .wrap
+      include template/_mobile-menu
+      include template/_pagination
+      include template/_section-1_main
+      include template/_section-2_why
+      include template/_section-4_team
+      include template/_section-5_menu
+      include template/_section-6_comment
+      include template/_section-7_work
+      include template/_section-8_form    
     include template/_footer
     include base/_scripts

@@ -2,7 +2,8 @@
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  right: 80px;
+  right: 5rem;
+  z-index: 999;
 }
 .pagination__item{
   width: 16px;

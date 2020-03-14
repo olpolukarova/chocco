@@ -1,24 +1,23 @@
 .section-team{
-  padding-top: 70px;
   background-image: url(../images/sec4/leaf_pattern.png);
   background-repeat: no-repeat;
   background-position: right top;
     &::before{
       content: url(../images/sec4/blueberries.png);
       position: absolute;
-      width: 135px;
-      height: 112px;
-      top: -30px;
+      width: 8.4375rem;
+      height: 7rem;
+      top: -1.875rem;
       right: 0;
       z-index: 1;
     }
     &::after{
       content: url(../images/sec4/raspberry.png);
       position: absolute;
-      width: 104px;
-      height: 114px;
-      bottom: -60px;
-      left: 60px;
+      width: 6.5rem;
+      height: 7.125rem;
+      bottom: -3.75rem;
+      left: 3.75rem;
       z-index: 1;
     }
 }
@@ -28,27 +27,29 @@
 }
 .team__common{
   width: 100%;
-  margin-right: 20px;
+  margin-right: 1.25rem;
   text-align: center;
     &:last-child{
       margin-right: 0;  
     }      
 }
 .team__foto{
-  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
+}
+.team__foto-img{
+  width: 100%;
 }
 .team__title{
   color: $light-black;
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 .team__title-name{
-  margin-right: 7px;
+  margin-right: 0.4375rem;
 }
 .team__title-down{
   width: 0; 
@@ -82,14 +83,14 @@
 }
 .team__hiden-title{
   color: $light-black;
-  font-size: 18px;
+  font-size: $font-size;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 .team__hiden-text{
   color: $grey;
-  font-size: 18px;
+  font-size: $font-size;
   font-weight: 300;
-  max-height: 100px;
+  max-height: 6.25rem;
   overflow-y: auto;
 }

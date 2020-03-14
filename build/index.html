@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="description" content=""/>
     <meta name="format-detection" content="telephone=no"/>
@@ -15,22 +15,18 @@
     <title>CHOCCO</title>
   </head>
   <body ontouchstart="">
-    <section class="section section-main">
-      <header class="header">
-        <div class="container">
-          <nav class="nav"><a class="logo" href="index.html"><img src="./images/logo.png" alt="chocco"/></a>
-            <ul class="menu">
-              <li class="menu__item"><a class="menu__link" href="#sec2">О нас                  </a></li>
-              <li class="menu__item"><a class="menu__link" href="#sec3">Батончики </a></li>
-              <li class="menu__item"><a class="menu__link" href="#sec4">Команда</a></li>
-              <li class="menu__item"><a class="menu__link" href="#sec5">Меню</a></li>
-              <li class="menu__item"><a class="menu__link" href="#sec6">Отзывы </a></li>
-              <li class="menu__item"><a class="menu__link" href="#sec7">Как мы работаем</a></li>
-              <li class="menu__item"><a class="menu__link" href="#sec8">Контакты</a></li>
-            </ul><a class="number" href="tel:88009039090">8 800 903 90 90</a>
-          </nav>
-        </div>
-      </header>
+    <div class="wrap">
+      <div class="mobile-menu"><a class="close" href="#"><img src="./images/close-ico.svg" alt="menu"/></a>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#sec2">О нас                  </a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#sec3">Батончики </a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#sec4">Команда</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#sec5">Меню</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#sec6">Отзывы </a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#sec7">Как мы работаем</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#sec8">Контакты</a></li>
+        </ul>
+      </div>
       <ul class="pagination">
         <li class="pagination__item pagination__item--active"><a class="pagination__link" href="#"></a></li>
         <li class="pagination__item"><a class="pagination__link" href="#"></a></li>
@@ -42,22 +38,40 @@
         <li class="pagination__item"><a class="pagination__link" href="#"></a></li>
         <li class="pagination__item"><a class="pagination__link" href="#"></a></li>
       </ul>
-      <div class="section-center section-center--header">
-        <div class="main">
-          <h1 class="title title--main">натуральные шоколадные батончики</h1>
-          <p class="main__subtitle">Наши батончики идеально подходят для <br/> тех, кто следит за своим здоровьем</p>
-          <button class="button button--main" type="button">Заказать</button>
-          <ul class="main__list">
-            <li class="main__item main__item--leaf">100% натуральный продукт</li>
-            <li class="main__item main__item--car">3-5 дней доставка по&nbsp;РФ</li>
-            <li class="main__item main__item--metre">Не&nbsp;портит фигуру </li>
-          </ul>
+      <section class="section section-main">
+        <header class="header">
+          <div class="container">
+            <nav class="nav"><a class="logo" href="index.html"><img src="./images/logo.png" alt="chocco"/></a>
+              <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="#sec2">О нас                  </a></li>
+                <li class="menu__item"><a class="menu__link" href="#sec3">Батончики </a></li>
+                <li class="menu__item"><a class="menu__link" href="#sec4">Команда</a></li>
+                <li class="menu__item"><a class="menu__link" href="#sec5">Меню</a></li>
+                <li class="menu__item"><a class="menu__link" href="#sec6">Отзывы </a></li>
+                <li class="menu__item"><a class="menu__link" href="#sec7">Как мы работаем</a></li>
+                <li class="menu__item"><a class="menu__link" href="#sec8">Контакты</a></li>
+              </ul><a class="number" href="tel:88009039090">8 800 903 90 90</a><a class="burger" href="#"><img src="./images/burger-ico.svg" alt="menu"/></a>
+            </nav>
+          </div>
+        </header>
+        <div class="section-center section-center--header">
+          <div class="main">
+            <h1 class="title title--main">натуральные шоколадные батончики</h1>
+            <p class="main__subtitle">Наши батончики идеально подходят для <br/> тех, кто следит за своим здоровьем</p>
+            <button class="button button--main" type="button">Заказать</button>
+            <ul class="main__list">
+              <li class="main__item main__item--leaf">100% натуральный продукт</li>
+              <li class="main__item main__item--car">3-5 дней доставка по&nbsp;РФ</li>
+              <li class="main__item main__item--metre">Не&nbsp;портит фигуру </li>
+            </ul>
+          </div>
+          <div class="bar">
+            <div class="bar-img"><img src="./images/sec1/bar.png" alt="bar"/></div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="section section-why" id="sec2">
-      <div class="section-center">
-        <div class="container">
+      </section>
+      <section class="section section-why" id="sec2">
+        <div class="section-center">
           <h2 class="title">почему chocco?
             <p class="title__inner">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с собой.</p>
           </h2>
@@ -75,194 +89,187 @@
             <li class="why__item">
               <div class="why__icon why__icon--hand"></div>
               <div class="why__title-inner">Питательно</div>
-              <div class="why__text">Высокое содержание качественного белка, а также всех необходимых  витаминов и минералов.</div>
+              <div class="why__text">Высокое содержание качественного белка, а также всех необходимых  витаминов и минералов. </div>
             </li>
           </ul>
         </div>
-      </div>
-    </section>
-    <section class="section section-team" id="sec4">
-      <div class="container"> 
-        <h2 class="title">Команда</h2>
-        <div class="team">
-          <div class="team__common">
-            <div class="team__foto"><img class="team__foto-img" src="./images/sec4/ava1.jpg" alt="Оператор"/></div>
-            <div class="team__title"> 
-              <p class="team__title-name">Борис Федорович</p>
-              <p class="team__title-down active"></p>
-              <p class="team__title-up active"></p>
+      </section>
+      <section class="section section-team" id="sec4">
+        <div class="section-center"> 
+          <h2 class="title">Команда</h2>
+          <div class="team">
+            <div class="team__common">
+              <div class="team__foto"><img class="team__foto-img" src="./images/sec4/ava1.jpg" alt="Оператор"/></div><a class="team__title" href="#"> 
+                <p class="team__title-name">Борис Федорович</p>
+                <p class="team__title-down active"></p>
+                <p class="team__title-up active"></p></a>
+              <div class="team__hiden active">
+                <div class="team__hiden-title">Оператор</div>
+                <div class="team__hiden-text">С радостью поможет подобрать батончики и оформить заказ.</div>
+              </div>
             </div>
-            <div class="team__hiden active">
-              <div class="team__hiden-title">Оператор</div>
-              <div class="team__hiden-text">С радостью поможет подобрать батончики и оформить заказ.</div>
+            <div class="team__common">
+              <div class="team__foto"><img class="team__foto-img" src="./images/sec4/ava2.jpg" alt="Директор по закупкам"/></div><a class="team__title" href="#">
+                <p class="team__title-name">Алла Иванова</p>
+                <p class="team__title-down"></p>
+                <p class="team__title-up"></p></a>
+              <div class="team__hiden">
+                <div class="team__hiden-title">Директор по закупкам</div>
+                <div class="team__hiden-text">С радостью поможет подобрать батончики и оформить заказ.</div>
+              </div>
             </div>
-          </div>
-          <div class="team__common">
-            <div class="team__foto"><img class="team__foto-img" src="./images/sec4/ava2.jpg" alt="Директор по закупкам"/></div>
-            <div class="team__title">
-              <p class="team__title-name">Алла Иванова</p>
-              <p class="team__title-down"></p>
-              <p class="team__title-up"></p>
+            <div class="team__common">
+              <div class="team__foto"><img class="team__foto-img" src="./images/sec4/ava3.jpg" alt="Маркетолог"/></div><a class="team__title" href="#">
+                <p class="team__title-name">Кирилл Матросов</p>
+                <p class="team__title-down"></p>
+                <p class="team__title-up"></p></a>
+              <div class="team__hiden">
+                <div class="team__hiden-title">Маркетолог</div>
+                <div class="team__hiden-text">Работа маркетолога - это всегда интересно и креативно. </div>
+              </div>
             </div>
-            <div class="team__hiden">
-              <div class="team__hiden-title">Директор по закупкам</div>
-              <div class="team__hiden-text">С радостью поможет подобрать батончики и оформить заказ.</div>
-            </div>
-          </div>
-          <div class="team__common">
-            <div class="team__foto"><img class="team__foto-img" src="./images/sec4/ava3.jpg" alt="Маркетолог"/></div>
-            <div class="team__title">
-              <p class="team__title-name">Кирилл Матросов</p>
-              <p class="team__title-down"></p>
-              <p class="team__title-up"></p>
-            </div>
-            <div class="team__hiden">
-              <div class="team__hiden-title">Маркетолог</div>
-              <div class="team__hiden-text">Работа маркетолога - это всегда интересно и креативно. </div>
-            </div>
-          </div>
-          <div class="team__common">
-            <div class="team__foto"><img class="team__foto-img" src="./images/sec4/ava4.jpg" alt="Менеджер"/></div>
-            <div class="team__title">
-              <p class="team__title-name">Мила Рыжкова</p>
-              <p class="team__title-down"></p>
-              <p class="team__title-up"></p>
-            </div>
-            <div class="team__hiden">
-              <div class="team__hiden-title">Ведущий менеджер отдела закупок и логистики</div>
-              <div class="team__hiden-text">С радостью поможет подобрать батончики и оформить заказ.</div>
+            <div class="team__common">
+              <div class="team__foto"><img class="team__foto-img" src="./images/sec4/ava4.jpg" alt="Менеджер"/></div><a class="team__title" href="#">
+                <p class="team__title-name">Мила Рыжкова</p>
+                <p class="team__title-down"></p>
+                <p class="team__title-up"></p></a>
+              <div class="team__hiden">
+                <div class="team__hiden-title">Ведущий менеджер отдела закупок и логистики</div>
+                <div class="team__hiden-text">С радостью поможет подобрать батончики и оформить заказ.</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section section-menu" id="sec5">
-      <div class="container">
-        <h2 class="title title--menu">Меню</h2>
-      </div>
-      <ul class="accordeon">
-        <li class="accordeon__section active">
-          <div class="accordeon__section-title milk">
-            <h3>Батончики с молоком</h3>
-          </div>
-          <div class="accordeon__section-content">
-            <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
-          </div>
-        </li>
-        <li class="accordeon__section">
-          <div class="accordeon__section-title fruit">
-            <h3>С мёдом и фруктами</h3>
-          </div>
-          <div class="accordeon__section-content">
-            <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. </p>
-          </div>
-        </li>
-        <li class="accordeon__section">
-          <div class="accordeon__section-title berry">
-            <h3>Дикие ягоды</h3>
-          </div>
-          <div class="accordeon__section-content">
-            <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. </p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="section section-comment" id="sec6">
-      <div class="container">
-        <h2 class="title">Отзывы</h2>
-        <div class="comment">
-          <div class="comment__content-main"><img class="comment__avatar" src="./images/sec6/ava1.png" alt="avatar"/>
-            <div class="comment__content">
-              <div class="comment__content-title">Лучший перекус</div>
-              <div class="comment__content-text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и&nbsp;удобно. </div>
-              <div class="comment__content-name">Алёна Хмельницкая</div>
-            </div>
-          </div>
-          <div class="comment__switch"><a class="comment__switch-link comment__switch-link--active" href="#"><img src="./images/sec6/ava1.png" alt="avatar"/></a><a class="comment__switch-link" href="#"><img src="./images/sec6/ava2.png" alt="avatar"/></a><a class="comment__switch-link" href="#"><img src="./images/sec6/ava3.png" alt="avatar"/></a></div>
-        </div>
-      </div>
-    </section>
-    <section class="section section-work" id="sec7">
-      <div class="section-center">
+      </section>
+      <section class="section section-menu" id="sec5">
         <div class="container">
+          <h2 class="title title--menu">Меню</h2>
+        </div>
+        <ul class="accordeon">
+          <li class="accordeon__section active">
+            <div class="accordeon__section-title milk">
+              <h3>Батончики с молоком</h3>
+            </div>
+            <div class="accordeon__section-content">
+              <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы.</p>
+            </div>
+          </li>
+          <li class="accordeon__section">
+            <div class="accordeon__section-title fruit">
+              <h3>С мёдом и фруктами</h3>
+            </div>
+            <div class="accordeon__section-content">
+              <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. </p>
+            </div>
+          </li>
+          <li class="accordeon__section">
+            <div class="accordeon__section-title berry">
+              <h3>Дикие ягоды</h3>
+            </div>
+            <div class="accordeon__section-content">
+              <p>Рекомендуем употреблять батончики вместе с кокосовым или миндальным молоком. Так и вкуснее, и полезнее. Ну чего ещё хотеть от жизни? Батончик – он твой лучший друг и радует всех вокруг. Как классно, что можно питаться полезно и вкусно, а не как попало. Бабуля, конечно, за такую еду не похвалит, но кто её будет спрашивать – никто. Надо бы, кстати, бабулю поздравить с днём Победы. </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="section section-comment" id="sec6">
+        <div class="section-center">
+          <h2 class="title">Отзывы</h2>
+          <div class="comment">
+            <div class="comment__content-main"><img class="comment__avatar" src="./images/sec6/ava1.png" alt="avatar"/>
+              <div class="comment__content">
+                <div class="comment__content-title">Лучший перекус</div>
+                <div class="comment__content-text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и&nbsp;удобно. </div>
+                <div class="comment__content-name">Алёна Хмельницкая</div>
+              </div>
+            </div>
+            <div class="comment__switch"><a class="comment__switch-link comment__switch-link--active" href="#"><img src="./images/sec6/ava1.png" alt="avatar"/></a><a class="comment__switch-link" href="#"><img src="./images/sec6/ava2.png" alt="avatar"/></a><a class="comment__switch-link" href="#"><img src="./images/sec6/ava3.png" alt="avatar"/></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-work" id="sec7">
+        <div class="section-center">
           <h2 class="title">Как мы работаем</h2>
           <div class="work">
             <div class="work__content">
-              <video class="work__video" src="./images/sec7/clams.mp4" controls="controls" width="660" height="370" preload="none" poster="./images/sec7/poster.jpg" loop="loop" muted="muted" id="video-player">
+              <video class="work__video" src="./images/sec7/clams.mp4" width="660" height="370" preload="none" poster="./images/sec7/poster.jpg" loop="loop" muted="muted" id="video-player">
                 <source src="video.mp4" type="video/mp4"/>
               </video>
             </div>
             <div class="work__content">
               <div class="work__elements">
                 <div class="work__elements-play"></div>
-                <input class="work__elements-progress" type="range"/>
+                <div class="work__elements-progress">
+                  <input type="range"/>
+                </div>
                 <div class="work__elements-volume">
+                  <div class="volume-ico"></div>
                   <input type="range"/>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section section-form" id="sec8">
-      <div class="section-center">
-        <h2 class="title title--form">Закажите доставку</h2>
-        <form class="form" action="">
-          <div class="form__column">
-            <div class="form__row">
-              <label class="form__label" for=""><span class="form__subtitle">Имя</span>
-                <input class="form__input" type="text" name="name" placeholder="Ольга" required="required"/>
-              </label>
-              <label class="form__label" for=""><span class="form__subtitle">Телефон</span>
-                <input class="form__input" type="tel" name="tel" placeholder="89022348912" required="required"/>
-              </label>
+      </section>
+      <section class="section section-form" id="sec8">
+        <div class="section-center">
+          <h2 class="title title--form">Закажите доставку</h2>
+          <form class="form" action="">
+            <div class="form__column">
+              <div class="form__row">
+                <label class="form__label" for=""><span class="form__subtitle">Имя</span>
+                  <input class="form__input" type="text" name="name" placeholder="Ольга" required="required"/>
+                </label>
+                <label class="form__label" for=""><span class="form__subtitle">Телефон</span>
+                  <input class="form__input" type="tel" name="tel" placeholder="89022348912" required="required"/>
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__label" for=""><span class="form__subtitle">Улица</span>
+                  <input class="form__input" type="text" required="required"/>
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__label" for=""><span class="form__subtitle">Дом</span>
+                  <input class="form__input" type="text" required="required"/>
+                </label>
+                <label class="form__label" for=""><span class="form__subtitle">Корпус</span>
+                  <input class="form__input" type="text" required="required"/>
+                </label>
+                <label class="form__label" for=""><span class="form__subtitle">Квартира</span>
+                  <input class="form__input" type="text" required="required"/>
+                </label>
+                <label class="form__label" for=""><span class="form__subtitle">Этаж</span>
+                  <input class="form__input" type="text" required="required"/>
+                </label>
+              </div>
             </div>
-            <div class="form__row">
-              <label class="form__label" for=""><span class="form__subtitle">Улица</span>
-                <input class="form__input" type="text" required="required"/>
-              </label>
+            <div class="form__column">
+              <div class="form__row">
+                <label class="form__label" for=""><span class="form__subtitle">Комментарий</span>
+                  <textarea class="form__textarea form__input"></textarea>
+                </label>
+              </div>
+              <div class="form__row-mb">
+                <label class="form__radio-label" for="change">
+                  <input class="form__radio-input" type="radio" name="pay" id="change"/><span class="form__radio-custom"></span><span class="form__subtitle">Потребуется сдача</span>
+                </label>
+                <label class="form__radio-label" for="pay">
+                  <input class="form__radio-input" type="radio" name="pay" checked="checked" id="pay"/><span class="form__radio-custom"></span><span class="form__subtitle">Оплата по карте</span>
+                </label>
+                <label class="form__chec-label" for="chec">
+                  <input class="form__chec-input" type="checkbox" checked="checked" id="chec"/><span class="form__chec-custom"></span><span class="form__subtitle">Не перезванивать</span>
+                </label>
+              </div>
+              <div class="form__button">
+                <button class="button button--submit" type="submit">Заказать</button>
+                <button class="button button--reset" type="reset">Очистить</button>
+              </div>
             </div>
-            <div class="form__row">
-              <label class="form__label" for=""><span class="form__subtitle">Дом</span>
-                <input class="form__input" type="text" required="required"/>
-              </label>
-              <label class="form__label" for=""><span class="form__subtitle">Корпус</span>
-                <input class="form__input" type="text" required="required"/>
-              </label>
-              <label class="form__label" for=""><span class="form__subtitle">Квартира</span>
-                <input class="form__input" type="text" required="required"/>
-              </label>
-              <label class="form__label" for=""><span class="form__subtitle">Этаж</span>
-                <input class="form__input" type="text" required="required"/>
-              </label>
-            </div>
-          </div>
-          <div class="form__column">
-            <div class="form__row">
-              <label class="form__label" for=""><span class="form__subtitle">Комментарий</span>
-                <textarea class="form__textarea form__input"></textarea>
-              </label>
-            </div>
-            <div class="form__row-mb">
-              <label class="form__radio-label" for="change">
-                <input class="form__radio-input" type="radio" name="pay" id="change"/><span class="form__radio-custom"></span><span class="form__subtitle">Потребуется сдача</span>
-              </label>
-              <label class="form__radio-label" for="pay">
-                <input class="form__radio-input" type="radio" name="pay" checked="checked" id="pay"/><span class="form__radio-custom"></span><span class="form__subtitle">Оплата по карте</span>
-              </label>
-              <label class="form__chec-label" for="chec">
-                <input class="form__chec-input" type="checkbox" checked="checked" id="chec"/><span class="form__chec-custom"></span><span class="form__subtitle">Не перезванивать</span>
-              </label>
-            </div>
-            <div class="form__button">
-              <button class="button button--submit" type="submit">Заказать</button>
-              <button class="button button--reset" type="reset">Очистить</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
+          </form>
+        </div>
+      </section>
+    </div>
     <script src="./js/libs.min.js"></script>
     <script src="./js/main.js"></script><script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   </body>

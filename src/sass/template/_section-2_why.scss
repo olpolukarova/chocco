@@ -7,12 +7,12 @@
 .title__inner{
   color: $grey;
   font-family: $font;
-  font-size: 18px;
+  font-size: $font-size;
   font-weight: 400;
   text-align: center;
   text-transform: none;
-  padding-top: 10px;
-  max-width: 420px;
+  padding-top: 0.625rem;
+  max-width: 26.25rem;
   margin: 0 auto;
 }
 .why{
@@ -21,7 +21,7 @@
 }
 .why__item{
   position: relative;
-  margin-right: 60px;
+  margin-right: 3.75rem;
     &:last-child{
       margin-right: 0;
     }
@@ -38,13 +38,13 @@
 }
 .why__icon{
   display: inline-block;
-  width: 125px;
-  height: 125px;
+  width: 7.8125rem;
+  height: 7.8125rem;
   background-color: #f2f5f4;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 50%;
-  margin-bottom: 35px;    
+  margin-bottom: 2.1875rem;    
 }
 .why__icon--men{
   background-image: url(../images/sec2/icon_men.svg);
@@ -60,12 +60,12 @@
 }
 .why__title-inner{
   color: $black;
-  font-size: 27px;
+  font-size: 1.6875rem;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 .why__text{
   color: $grey;
-  font-size: 18px;
+  font-size: $font-size;
   font-weight: 300;
 }

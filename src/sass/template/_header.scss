@@ -1,5 +1,5 @@
 .header{
-  padding: 25px 0;
+  padding: 1.5625rem 0;
 }
 .nav{
   display: flex;
@@ -10,7 +10,7 @@
   display: flex;
 }
 .menu__item{  
-  margin-right: 25px;
+  margin-right: 1.5625rem;
   transition: .4s;
   
     &:last-child{
@@ -28,12 +28,12 @@
 .menu__link, .number{
   color: $white;
   font-family: $font;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400; 
 }
 
 .number{  
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   transition: .4s;
   border: 2px solid transparent;
@@ -42,8 +42,8 @@
       content: "";      
       display: inline-block;
       margin-right: 6px;  
-      width: 12px;
-      height: 11px;
+      width: 0.75rem;
+      height: 0.6875rem;
       background-image: url(../images/sec1/phone.svg);
       background-repeat: no-repeat;
     }
@@ -52,3 +52,6 @@
       border-bottom: 2px solid #ffffff;
     }
 } 
+.burger{
+  display: none;
+}

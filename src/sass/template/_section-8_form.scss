@@ -19,7 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 17px;
+  margin-bottom: 1.0625rem;
     &:last-child{
       margin-bottom: 0;    
     }
@@ -28,20 +28,20 @@
   display: flex;
   flex: 1;
   flex-wrap: wrap;
-  margin-right: 20px;
+  margin-right: 1.25rem;
     &:last-child{
       margin-right: 0;
     }
 }
 .form__subtitle{
   color: $green;
-  font-size: 18px;
+  font-size: $font-size;
   font-weight: 400;
   line-height: 1.3;
 }
 .form__input{
   width: 100%;
-  height: 60px;
+  height: 3.75rem;
   background-color: #ffffff;
   padding: 0 10px;
 }
@@ -49,27 +49,27 @@
   border: 3px solid #dde3bd;
 }
 .form__textarea{
-  min-height: 180px;
-  padding-top: 5px;
+  min-height: 11.25rem;
+  padding-top: 0.3125rem;
 }
 .form__radio-label, .form__chec-label{
   display: flex;
   align-items: center;
 }
 .form__radio-label{
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 .form__chec-label{
-  margin-top: 8px;
+  margin-top: 0.5rem;
   flex: 1;
 }
 .form__radio-custom{
   position: relative;
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   border-radius: 50%;
   background-color: #ffffff;
-  margin-right: 10px;
+  margin-right: 0.625rem;
   flex-shrink: 0;
     &::after{
       content: '';
@@ -85,16 +85,16 @@
     }
 }
 .form__radio-input:checked + .form__radio-custom::after{
-  width: 13px;
-  height: 13px;
+  width: 0.8125rem;
+  height: 0.8125rem;
 }
 .form__chec-custom{
   position: relative;
   display: inline-block;
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   background-color: #ffffff;
-  margin-right: 10px;
+  margin-right: 0.625rem;
     &::after{
       content: "";
       background-image: url(../images/sec8/check.svg);
@@ -108,15 +108,15 @@
     }
 }
 .form__chec-input:checked + .form__chec-custom::after{
-  width: 11px;
-  height: 9px;
+  width: 0.6875rem;
+  height: 0.5625rem;
 }
 .form__button{
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 .form__row-mb{
  display: flex;
  flex-wrap: wrap;
  flex: 1;
- padding-top: 3px;
+ padding-top: 0.1875rem;
 }
