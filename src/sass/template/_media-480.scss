@@ -1,0 +1,74 @@
+@media(max-width: 768px){
+  .bar {
+    width: 80%;
+    position: relative;
+    top: -11%;
+  }
+  .main{
+    width: 100%;
+    position: relative;
+    top: -7%;
+  }
+  // .title--main{
+  //   font-size: 3.5rem;
+  // }
+  .button-main{
+    margin-bottom: 0;
+  }
+  .advantage__item{
+    margin-right: 1.5rem;
+  }
+  .advantage__list{
+    line-height: normal;
+    font-size: 0.8rem;
+    position: relative;
+    top: -23%;
+  }
+  .advantage__img{
+    height: 2rem; 
+  }
+}
+@media(max-width: 480px){
+  html{
+    font-size: 15px;
+  }  
+  .title{
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .title--main{
+    font-size: 9.7vw;
+    margin-bottom: 0.5rem;
+  }
+  .main__subtitle{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .section-why{
+    background-image: none;
+  }
+  .why__item{
+    display: flex;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .why__icon{
+    margin-bottom: 0;
+    margin-right: 0.9375rem;
+    flex-shrink: 0;
+  }
+  .team__foto-img{
+    width: 85%;
+  }
+  .comment__avatar{
+    width: 40%;
+    height: 40%;
+  }
+  .form__textarea{
+    margin-bottom: 0;
+  }
+
+
+
+
+}

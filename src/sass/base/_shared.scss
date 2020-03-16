@@ -176,6 +176,7 @@ path{
   height: 100%;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .section-center{
   position: relative;
@@ -191,16 +192,16 @@ path{
 .title{
   color: $black;
   font-family: $font;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: normal;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 .title--main{
   color: $white;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 1;
   text-align: left;
   margin-bottom: 0.9375rem;

@@ -9,8 +9,8 @@
 }
 .form__column{
   flex-wrap: wrap;
-  width: calc(50% - 20px);
-  margin-right: 20px;
+  width: calc(50% - 1.25rem);
+  margin-right: 1.25rem;
     &:last-child{
       margin-right: 0;
     }
@@ -43,7 +43,7 @@
   width: 100%;
   height: 3.75rem;
   background-color: #ffffff;
-  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 .form__input:focus{
   border: 3px solid #dde3bd;
