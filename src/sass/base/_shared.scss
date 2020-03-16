@@ -24,9 +24,11 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  height: 100%;
 }
 
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: $font;
@@ -154,16 +156,24 @@ li{
 path{
   transition: .4s;
 }
+.wrap{
+  height: 100%;
+}
 .container{
+  display: flex;
+  flex-direction: column;
   max-width: 980px;
+  min-width: 300px;
   position: relative;
-	width: 100%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 }
 .section{
-  height: 100vh;
+  // height: 100vh;
+  height: 100%;
   width: 100%;
   position: relative;
 }
@@ -171,8 +181,9 @@ path{
   position: relative;
   top: 50%;  
   transform: translateY(-50%);
-  width: 100%;
   max-width: 980px;
+  min-width: 300px;  
+  width: 100%;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -180,19 +191,19 @@ path{
 .title{
   color: $black;
   font-family: $font;
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: normal;
   text-align: center;
-  margin-bottom: 3.75rem;
+  margin-bottom: 60px;
 }
 .title--main{
   color: $white;
-  font-size: 3.75rem;
+  font-size: 60px;
   line-height: 1;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 .title--form{
   color: $green;

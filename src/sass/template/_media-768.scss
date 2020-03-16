@@ -1,18 +1,13 @@
 @media(max-width: 1100px){
   .menu__link, .number{
     font-size: 1.5vw;
-}  .section-center--header{
-    align-items: center;
-  }
+  }  
 }
+
 @media(max-width: 768px){
-  .section{
-    // margin-top: 3.75rem;
-    height: 100vmax;
-  }
-  .section-main{
-    margin-top: 0;
-  }
+  // html{
+  //   font-size: 15px;
+  // }
   .menu, .number{
     display: none;
   }
@@ -22,14 +17,53 @@
   .pagination{
     display: none;
   }
-  .section-center--header{
-  flex-direction: column-reverse;
-  }
-  .title--main, .main{
+  .content-common{
+    flex-direction: column;
     text-align: center;
+  }
+  .bar{
+    order: -1;
+    position: relative;
+      &::after{
+        content: url(../images/sec1/berry_768.png);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+      }
+      &::before{
+        content: url(../images/sec1/leaf_768.png);
+        position: absolute;
+        bottom: 0;
+        left: -4%;
+        z-index: 1;
+      }
+  }
+  .title{
+    margin-bottom: 2.5rem;
+  }
+  .title--main{
+    text-align: center;
+    margin-bottom: 0.9375rem;
   }
   .main__list{
     text-align: left;
+  }
+  .advantage{
+    width: 100%;
+    max-width: 34.375rem; 
+    margin: 0 auto;
+  }
+  .advantage__text br{
+    display: none;
+  }
+  // 
+  .section-center{
+    max-width: 460px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .why{
     flex-direction: column;
@@ -46,11 +80,10 @@
     margin-right: auto;
     margin-bottom: 0;
   }
-  .title{
-    margin-bottom: 2.5rem;
+   //
+  .section-center--team{
+    max-width: 480px;
   }
-  //
-
   .team{
     flex-wrap: wrap;
   }
@@ -59,10 +92,6 @@
     margin-right: 0;
     margin-bottom: 2.1875rem;
   }
-  .section-team{
-    margin-bottom: -2.1875rem;
-  }
-
   //
   .accordeon{
     width: 100%;
@@ -73,15 +102,20 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    max-width: 34.375rem;
     margin: 0 auto 1.875rem;
-    padding: 5.2rem;
+    padding: 16% 3% 5%;
+    background-size: 25%;
   }
   .comment__avatar{
     margin: 0 0 1.875rem 0;
+    width: 50%;
+    height: 50%;
   }
 
   //
+  .section-center--form{
+    max-width: 550px;
+  }
   .form{
     flex-wrap: wrap;
   }
@@ -118,5 +152,11 @@
 
 
 
+
+}
+@media(max-width: 480px){
+  .title{
+    font-size: 2.5rem;
+  }
 
 }
