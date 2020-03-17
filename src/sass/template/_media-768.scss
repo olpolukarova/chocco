@@ -130,7 +130,24 @@
   .comment__content-text{
     margin: 0 auto 4vmin;
   }
-  
+  ///////// form
+  .center--form{
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  .form{
+    flex-direction: column;
+  }
+  .form__column{
+    margin-right: 0;
+    width: 100%;
+  }
+  .form__row-mb, .form__chec-label{
+    justify-content: center;
+  }
+  .form__button{
+    text-align: center;
+  }
 
 
 

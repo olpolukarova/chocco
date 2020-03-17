@@ -239,61 +239,63 @@
         </div>
       </section>
       <section class="section section-form" id="sec8">
-        <div class="section-center section-center--form">
-          <h2 class="title title--form">Закажите доставку</h2>
-          <form class="form" action="">
-            <div class="form__column">
-              <div class="form__row">
-                <label class="form__label" for=""><span class="form__subtitle">Имя</span>
-                  <input class="form__input" type="text" name="name" placeholder="Ольга" required="required"/>
-                </label>
-                <label class="form__label" for=""><span class="form__subtitle">Телефон</span>
-                  <input class="form__input" type="tel" name="tel" placeholder="89022348912" required="required"/>
-                </label>
+        <div class="container">
+          <div class="center center--form">
+            <h2 class="title title--form">Закажите доставку</h2>
+            <form class="form" action="">
+              <div class="form__column">
+                <div class="form__row">
+                  <label class="form__label" for=""><span class="form__subtitle">Имя</span>
+                    <input class="form__input" type="text" name="name" placeholder="Ольга" required="required"/>
+                  </label>
+                  <label class="form__label" for=""><span class="form__subtitle">Телефон</span>
+                    <input class="form__input" type="tel" name="tel" placeholder="89022348912" required="required"/>
+                  </label>
+                </div>
+                <div class="form__row">
+                  <label class="form__label" for=""><span class="form__subtitle">Улица</span>
+                    <input class="form__input" type="text" required="required"/>
+                  </label>
+                </div>
+                <div class="form__row">
+                  <label class="form__label" for=""><span class="form__subtitle">Дом</span>
+                    <input class="form__input" type="text" required="required"/>
+                  </label>
+                  <label class="form__label" for=""><span class="form__subtitle">Корпус</span>
+                    <input class="form__input" type="text" required="required"/>
+                  </label>
+                  <label class="form__label" for=""><span class="form__subtitle">Квартира</span>
+                    <input class="form__input" type="text" required="required"/>
+                  </label>
+                  <label class="form__label" for=""><span class="form__subtitle">Этаж</span>
+                    <input class="form__input" type="text" required="required"/>
+                  </label>
+                </div>
               </div>
-              <div class="form__row">
-                <label class="form__label" for=""><span class="form__subtitle">Улица</span>
-                  <input class="form__input" type="text" required="required"/>
-                </label>
+              <div class="form__column">
+                <div class="form__row">
+                  <label class="form__label" for=""><span class="form__subtitle">Комментарий</span>
+                    <textarea class="form__textarea form__input"></textarea>
+                  </label>
+                </div>
+                <div class="form__row-mb">
+                  <label class="form__radio-label" for="change">
+                    <input class="form__radio-input" type="radio" name="pay" id="change"/><span class="form__radio-custom"></span><span class="form__subtitle">Потребуется сдача</span>
+                  </label>
+                  <label class="form__radio-label" for="pay">
+                    <input class="form__radio-input" type="radio" name="pay" checked="checked" id="pay"/><span class="form__radio-custom"></span><span class="form__subtitle">Оплата по карте</span>
+                  </label>
+                  <label class="form__chec-label" for="chec">
+                    <input class="form__chec-input" type="checkbox" checked="checked" id="chec"/><span class="form__chec-custom"></span><span class="form__subtitle">Не перезванивать</span>
+                  </label>
+                </div>
+                <div class="form__button">
+                  <button class="button button--submit" type="submit">Заказать</button>
+                  <button class="button button--reset" type="reset">Очистить</button>
+                </div>
               </div>
-              <div class="form__row">
-                <label class="form__label" for=""><span class="form__subtitle">Дом</span>
-                  <input class="form__input" type="text" required="required"/>
-                </label>
-                <label class="form__label" for=""><span class="form__subtitle">Корпус</span>
-                  <input class="form__input" type="text" required="required"/>
-                </label>
-                <label class="form__label" for=""><span class="form__subtitle">Квартира</span>
-                  <input class="form__input" type="text" required="required"/>
-                </label>
-                <label class="form__label" for=""><span class="form__subtitle">Этаж</span>
-                  <input class="form__input" type="text" required="required"/>
-                </label>
-              </div>
-            </div>
-            <div class="form__column">
-              <div class="form__row">
-                <label class="form__label" for=""><span class="form__subtitle">Комментарий</span>
-                  <textarea class="form__textarea form__input"></textarea>
-                </label>
-              </div>
-              <div class="form__row-mb">
-                <label class="form__radio-label" for="change">
-                  <input class="form__radio-input" type="radio" name="pay" id="change"/><span class="form__radio-custom"></span><span class="form__subtitle">Потребуется сдача</span>
-                </label>
-                <label class="form__radio-label" for="pay">
-                  <input class="form__radio-input" type="radio" name="pay" checked="checked" id="pay"/><span class="form__radio-custom"></span><span class="form__subtitle">Оплата по карте</span>
-                </label>
-                <label class="form__chec-label" for="chec">
-                  <input class="form__chec-input" type="checkbox" checked="checked" id="chec"/><span class="form__chec-custom"></span><span class="form__subtitle">Не перезванивать</span>
-                </label>
-              </div>
-              <div class="form__button">
-                <button class="button button--submit" type="submit">Заказать</button>
-                <button class="button button--reset" type="reset">Очистить</button>
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </section>
     </div>

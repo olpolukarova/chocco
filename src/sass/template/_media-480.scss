@@ -3,6 +3,7 @@
     font-size: 11px;
   }
   .title{
+    font-size: 8.5vw;
     margin-bottom: 10vmin;
   }
   ///////////
@@ -18,6 +19,7 @@
   }
   .title--main{
     font-size: 8vw;
+    margin-bottom: 1vmin;
   }
   .main__subtitle{
     font-size: 3.3vw;
@@ -67,6 +69,10 @@
     max-width: 230px;
     margin: 0 auto;
   } 
+  ///////// form
+  .center--form{
+    max-width: 100%;
+  }
 
 
 

@@ -1157,12 +1157,32 @@ path {
   .comment__content-title {
     margin-bottom: 1vmin; }
   .comment__content-text {
-    margin: 0 auto 4vmin; } }
+    margin: 0 auto 4vmin; }
+  .center--form {
+    max-width: 30rem;
+    margin: 0 auto; }
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .form__column {
+    margin-right: 0;
+    width: 100%; }
+  .form__row-mb, .form__chec-label {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .form__button {
+    text-align: center; } }
 
 @media screen and (max-width: 480px) {
   html {
     font-size: 11px; }
   .title {
+    font-size: 8.5vw;
     margin-bottom: 10vmin; }
   .bar {
     width: 76vw;
@@ -1173,7 +1193,8 @@ path {
     position: relative;
     top: -8vmin; }
   .title--main {
-    font-size: 8vw; }
+    font-size: 8vw;
+    margin-bottom: 1vmin; }
   .main__subtitle {
     font-size: 3.3vw;
     margin-bottom: 2.8vw; }
@@ -1212,4 +1233,6 @@ path {
     height: 7.8125rem; }
   .comment__content-title {
     max-width: 230px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .center--form {
+    max-width: 100%; } }
