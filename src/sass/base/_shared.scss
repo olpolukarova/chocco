@@ -158,36 +158,28 @@ path{
 }
 .wrap{
   height: 100%;
+  width: 100%;
+  position: relative;
 }
 .container{
-  display: flex;
-  flex-direction: column;
-  max-width: 980px;
-  min-width: 300px;
+  max-width: 61.25rem;
+  min-width: 18.75rem;
   position: relative;
-  width: 100%;
+  width: 95%;
   height: 100%;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 .section{
-  // height: 100vh;
-  height: 100%;
+  height: 100vh;
+  min-height: 34.375rem;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-.section-center{
+.center{
   position: relative;
   top: 50%;  
-  transform: translateY(-50%);
-  max-width: 980px;
-  min-width: 300px;  
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  transform: translateY(-50%);   
 }
 .title{
   color: $black;

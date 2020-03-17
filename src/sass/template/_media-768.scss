@@ -1,182 +1,61 @@
 @media(max-width: 1100px){
-  // .menu__link, .number{
-  //   font-size: 1.5vw;
-  // }  
-  // html{
-  //   font-size: 13px;
-  // }
-}
+  .menu__link, .number{
+    font-size: 1.7vw;
+  }  
 
-@media(max-width: 980px){
-  html{
-    font-size: 16px;
+  .section-main::after{
+    top: 53%;
   }
-  .menu, .number{
+  .section-main::before{
+    bottom: -4%;
+  }
+}
+@media screen and (max-width: 980px){
+  html{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px){
+  .menu, .number, .pagination{
     display: none;
   }
   .burger{
     display: block;
   }
-  .pagination{
-    display: none;
+  //////////////////
+  html{
+    font-size: 13px;
   }
   .content-common{
+    flex-wrap: nowrap;
     flex-direction: column;
+  }
+  .main{
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0 auto;
     text-align: center;
   }
   .bar{
     order: -1;
-    // position: relative;
-      // &::after{
-      //   content: url(../images/sec1/berry_768.png);
-      //   position: absolute;
-      //   bottom: 0;
-      //   right: 0;
-      //   z-index: 1;
-      // }
-      // &::before{
-      //   content: url(../images/sec1/leaf_768.png);
-      //   position: absolute;
-      //   bottom: 0;
-      //   left: -4%;
-      //   z-index: 1;
-      // }
+    position: relative;
+    width: 70vw;
+    height: 27.5rem;
+    margin-bottom: 10vmin;
   }
-  .title{
-    margin-bottom: 1.5rem;
+  .bar-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
   .title--main{
     text-align: center;
-    margin-bottom: 0.9375rem;
-    font-size: 6.7vw;
-  }
-  .main__list{
-    text-align: left;
-  }
-  .advantage{
-    width: 100%;
-    max-width: 34.375rem; 
-    margin: 0 auto;
   }
   .advantage__text br{
     display: none;
   }
-  // 
-  .section-center{
-    max-width: 28.75rem;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .why{
-    flex-direction: column;
-    max-width: 480px;
-    margin: 0 auto;
-  }
-  
-  .why__item{
-    margin: 0 0 1.1875rem 0;
-  }
-  .why__item::before{
-    display: none;
-  }
-  .why__item:last-child {
-    margin-right: auto;
-    margin-bottom: 0;
-  }
-  .why__icon{
-    margin-bottom: 1.1rem;
-    width: 6.8125rem;
-    height: 6.8125rem;
-    background-size: 46%;
-  }
-  .why__title-inner{
-    margin-bottom: 0.5rem;
-  }
-   //
-  .section-center--team{
-    max-width: 30rem;
-  }
-  .team{
-    flex-wrap: wrap;
-  }
-  .team__common{
-    width: calc(50% - 1.25rem);
-    margin-right: 0;
-    margin-bottom: 1.5625rem;
-  }
-  .team__foto{
-    margin-bottom: 1rem;
-  }
-  .team__title{
-    margin-bottom: 0.3125rem;
-  }
-  //
-  .accordeon{
-    width: 100%;
-  }
-
-  //
-  .comment__content-main{
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto 1.875rem;
-    padding: 16% 3% 5%;
-    background-size: 25%;
-  }
-  .comment__avatar{
-    margin: 0 0 1.875rem 0;
-    width: 50%;
-    height: 50%;
-  }
-
-  //
-  .section-center--form{
-    max-width: 550px;
-  }
-  .form{
-    flex-wrap: wrap;
-  }
-  .form__column{
-    margin-right: 0;
-    width: 100%;
-  }
-  .form__column:first-child{
-    margin-bottom: 0.9375rem;
-  }
-  .form__button{
-    text-align: center;
-  }
-
-  //
-  .form__row-mb{
-    flex-direction: row;
-  }
-  .form__radio-label{
-    margin-right: 0;
-    width: 50%;
-    justify-content: center;
-  }
-  .form__chec-label{
-    justify-content: center;
-  }
-  .form__textarea{
-    margin-bottom: 2.5rem;
-  }
-
-
-
-
 
 
 
 
 }
-// @media(max-width: 480px){
-//   .title{
-//     font-size: 2.5rem;
-//   }
-
-// }
