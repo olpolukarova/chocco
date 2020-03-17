@@ -16,6 +16,9 @@
   }
 }
 @media screen and (max-width: 768px){
+  .title{
+    margin-bottom: 4vmin;
+  }
   .menu, .number, .pagination{
     display: none;
   }
@@ -54,6 +57,30 @@
   .advantage__text br{
     display: none;
   }
+  ///////////////////
+   .container--why{
+     max-width: 26.25rem;
+   }
+  .why{
+    flex-wrap: wrap;
+  }
+  .why__item{
+    margin-right: 0;
+    margin-bottom: 3vmin;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    
+  .why__item::before{
+    content: none;
+  }
+  .why__icon{
+    margin-bottom: 2vmin;
+  }
+ 
+
+  
 
 
 

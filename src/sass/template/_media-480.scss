@@ -2,6 +2,10 @@
   html{
     font-size: 11px;
   }
+  .title{
+    margin-bottom: 10vmin;
+  }
+  ///////////
   .bar{
     width: 76vw;
     height: 21.5rem;
@@ -26,6 +30,22 @@
     justify-content: flex-end;
     margin-right: 1rem;
   }
+  ///////// 
+  .section-why{
+    background: none;
+  }
+  .container--why{
+    max-width: 100%;
+  }
+  .why__item{
+    display: flex;
+    text-align: left;
+  }
+  .why__icon{
+    flex-shrink: 0;
+    margin-right: 3vmin;
+  }
+  
 
 
 
