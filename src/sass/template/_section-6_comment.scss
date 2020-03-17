@@ -23,8 +23,7 @@
     }
 }
 .comment__content-main{
-  position: relative;
-  display: flex;
+  position: relative;  
   background-color: #f8faf9;
   padding: 3.125rem;
   background-image: url(../images/sec6/raspberry.png);
@@ -43,6 +42,9 @@
       transform: translateX(-50%);
     }
 }
+.comment__item{
+  display: flex;
+}
 .comment__avatar{
   width: 15.875rem;
   height: 16.25rem;
@@ -54,6 +56,7 @@
   font-size: 1.875rem;
   font-weight: 500; 
   margin-bottom: 1.875rem;
+  line-height: normal;
 }
 .comment__content-text{
   color: $grey;

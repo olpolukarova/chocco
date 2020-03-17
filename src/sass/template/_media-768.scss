@@ -14,6 +14,9 @@
   html{
     font-size: 15px;
   }
+  .comment__content-main{
+    background-size: 13vmin;
+  }
 }
 @media screen and (max-width: 768px){
   .title{
@@ -101,7 +104,32 @@
   .team__title{
     margin-bottom: 0.5vmin;
   }
-
+  ///////////////////
+  .container--comment{
+    max-width: 28.75rem;
+  }
+  .comment__item{
+    flex-direction: column;
+    text-align: center;
+  }
+  .comment__avatar{
+    margin-right: 0;
+  }
+  .comment__content-main{
+    background-size: 10vmin;
+  }
+  .comment__img{
+    margin-bottom: 2vmin;
+  }
+  .comment__content-main{
+    padding: 4rem;
+  }
+  .comment__content-title{
+    margin-bottom: 1vmin;
+  }
+  .comment__content-text{
+    margin: 0 auto 4vmin;
+  }
   
 
 

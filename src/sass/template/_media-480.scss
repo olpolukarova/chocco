@@ -49,10 +49,24 @@
   .container--team{
     max-width: 100%;
   }
-
-
-
-
+  ////////
+  .comment__content-main{
+    background-size: 24vmin;
+  }
+  .container--comment{
+    max-width: 100%;
+  }
+  // .comment__content-text{
+  //   max-width: 25rem;
+  // }
+  .comment__avatar{
+    width: 7.8125rem;
+    height: 7.8125rem;
+  }
+  .comment__content-title {
+    max-width: 230px;
+    margin: 0 auto;
+  } 
 
 
 

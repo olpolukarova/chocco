@@ -760,10 +760,6 @@ path {
 
 .comment__content-main {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #f8faf9;
   padding: 3.125rem;
   background-image: url(../images/sec6/raspberry.png);
@@ -784,6 +780,12 @@ path {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
 
+.comment__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 .comment__avatar {
   width: 15.875rem;
   height: 16.25rem;
@@ -795,7 +797,8 @@ path {
   color: #323232;
   font-size: 1.875rem;
   font-weight: 500;
-  margin-bottom: 1.875rem; }
+  margin-bottom: 1.875rem;
+  line-height: normal; }
 
 .comment__content-text {
   color: #666666;
@@ -1054,7 +1057,10 @@ path {
 
 @media screen and (max-width: 980px) {
   html {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .comment__content-main {
+    -webkit-background-size: 13vmin 13vmin;
+            background-size: 13vmin; } }
 
 @media screen and (max-width: 768px) {
   .title {
@@ -1129,7 +1135,29 @@ path {
     margin-bottom: 2vmin;
     height: 30vmax; }
   .team__title {
-    margin-bottom: 0.5vmin; } }
+    margin-bottom: 0.5vmin; }
+  .container--comment {
+    max-width: 28.75rem; }
+  .comment__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+  .comment__avatar {
+    margin-right: 0; }
+  .comment__content-main {
+    -webkit-background-size: 10vmin 10vmin;
+            background-size: 10vmin; }
+  .comment__img {
+    margin-bottom: 2vmin; }
+  .comment__content-main {
+    padding: 4rem; }
+  .comment__content-title {
+    margin-bottom: 1vmin; }
+  .comment__content-text {
+    margin: 0 auto 4vmin; } }
 
 @media screen and (max-width: 480px) {
   html {
@@ -1173,4 +1201,15 @@ path {
             flex-shrink: 0;
     margin-right: 3vmin; }
   .container--team {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .comment__content-main {
+    -webkit-background-size: 24vmin 24vmin;
+            background-size: 24vmin; }
+  .container--comment {
+    max-width: 100%; }
+  .comment__avatar {
+    width: 7.8125rem;
+    height: 7.8125rem; }
+  .comment__content-title {
+    max-width: 230px;
+    margin: 0 auto; } }
