@@ -25,32 +25,31 @@
 .menu__link{
   border: 2px solid transparent;
 }
-.menu__link, .number{
+.number{
+  display: inline-block;
+  border: 2px solid transparent;
+  background-image: url(../images/sec1/phone.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75rem 0.6875rem;
+  background-position: center left;
+  padding-left: 1.125rem;
+  transition: .4s;
+    &:hover{
+      transition: .4s;
+      border-bottom: 2px solid #ffffff;
+    }
+}
+
+.menu__link, .number__link{
   color: $white;
   font-family: $font;
   font-size: 1.125rem;
   font-weight: 400; 
 }
 
-.number{  
+.number__link{  
   font-size: 1.5rem;
-  text-transform: uppercase;
-  transition: .4s;
-  border: 2px solid transparent;
-  
-    &:before{
-      content: "";      
-      display: inline-block;
-      margin-right: 0.375rem;  
-      width: 0.75rem;
-      height: 0.6875rem;
-      background-image: url(../images/sec1/phone.svg);
-      background-repeat: no-repeat;
-    }
-    &:hover{
-      transition: .4s;
-      border-bottom: 2px solid #ffffff;
-    }
+  text-transform: uppercase;  
 } 
 .burger{
   display: none;

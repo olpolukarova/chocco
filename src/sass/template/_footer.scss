@@ -1,0 +1,51 @@
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem 0;
+  background-color: $white;
+}
+.container--footer{
+  display: flex;
+}
+.footer__left, .footer__right{
+  width: 50%;
+}
+.footer__right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.address{
+  color: #010101;
+  font-size: 1.3125rem;
+  margin-bottom: 0.625rem;
+}
+.number--green{
+  background-image: url(../images/sec9/phone_green.svg);
+    &:hover{
+        border-bottom: 2px solid #0f5a47;
+      }
+}
+.number__link--green{
+  font-size: 1.3125rem;
+  color: #0f5a47;
+}
+.social{
+  display: flex;
+}
+.social__item{
+  margin-right: 1.25rem;
+    &:last-child{
+      margin-right: 0;
+    }
+}
+.social__link{
+  width: 1.5625rem;
+  transition: .4s;  
+}
+.social__link:hover .st0{
+  transition: .4s;  
+  fill: #000;  
+}

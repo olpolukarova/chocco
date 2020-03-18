@@ -6,7 +6,7 @@
     font-size: 8.5vw;
     margin-bottom: 10vmin;
   }
-  ///////////
+  /////////// main
   .bar{
     width: 76vw;
     height: 21.5rem;
@@ -32,7 +32,7 @@
     justify-content: flex-end;
     margin-right: 1rem;
   }
-  ///////// 
+  ///////// why
   .section-why{
     background: none;
   }
@@ -47,20 +47,17 @@
     flex-shrink: 0;
     margin-right: 3vmin;
   }
-  ////////
+  //////// team
   .container--team{
     max-width: 100%;
   }
-  ////////
+  //////// comment
   .comment__content-main{
     background-size: 24vmin;
   }
   .container--comment{
     max-width: 100%;
   }
-  // .comment__content-text{
-  //   max-width: 25rem;
-  // }
   .comment__avatar{
     width: 7.8125rem;
     height: 7.8125rem;
@@ -74,7 +71,21 @@
     max-width: 100%;
   }
 
-
+  /////////// map
+  .container--footer{
+    flex-direction: column;
+  }
+  .footer__left, .footer__right{
+    width: 100%;
+    text-align: center;
+  }
+  .footer__right{
+    justify-content: center;
+  }
+  .footer__left, address{
+    margin-bottom: 2vmin;
+  }
+  
 
 
 

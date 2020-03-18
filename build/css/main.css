@@ -347,32 +347,33 @@ path {
 .menu__link {
   border: 2px solid transparent; }
 
-.menu__link, .number {
-  color: #ffffff;
-  font-family: "Alegreya Sans", Arial, Helvetica sans-serif;
-  font-size: 1.125rem;
-  font-weight: 400; }
-
 .number {
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  display: inline-block;
+  border: 2px solid transparent;
+  background-image: url(../images/sec1/phone.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: 0.75rem 0.6875rem;
+          background-size: 0.75rem 0.6875rem;
+  background-position: center left;
+  padding-left: 1.125rem;
   -webkit-transition: .4s;
   -o-transition: .4s;
-  transition: .4s;
-  border: 2px solid transparent; }
-  .number:before {
-    content: "";
-    display: inline-block;
-    margin-right: 0.375rem;
-    width: 0.75rem;
-    height: 0.6875rem;
-    background-image: url(../images/sec1/phone.svg);
-    background-repeat: no-repeat; }
+  transition: .4s; }
   .number:hover {
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s;
     border-bottom: 2px solid #ffffff; }
+
+.menu__link, .number__link {
+  color: #ffffff;
+  font-family: "Alegreya Sans", Arial, Helvetica sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400; }
+
+.number__link {
+  font-size: 1.5rem;
+  text-transform: uppercase; }
 
 .burger {
   display: none; }
@@ -1047,6 +1048,81 @@ path {
           flex: 1;
   padding-top: 0.1875rem; }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem 0;
+  background-color: #ffffff; }
+
+.container--footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer__left, .footer__right {
+  width: 50%; }
+
+.footer__right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.address {
+  color: #010101;
+  font-size: 1.3125rem;
+  margin-bottom: 0.625rem; }
+
+.number--green {
+  background-image: url(../images/sec9/phone_green.svg); }
+  .number--green:hover {
+    border-bottom: 2px solid #0f5a47; }
+
+.number__link--green {
+  font-size: 1.3125rem;
+  color: #0f5a47; }
+
+.social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.social__item {
+  margin-right: 1.25rem; }
+  .social__item:last-child {
+    margin-right: 0; }
+
+.social__link {
+  width: 1.5625rem;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; }
+
+.social__link:hover .st0 {
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+  fill: #000; }
+
+.map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
 @media (max-width: 1100px) {
   .menu__link, .number {
     font-size: 1.7vw; }
@@ -1063,14 +1139,14 @@ path {
             background-size: 13vmin; } }
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 13px; }
   .title {
     margin-bottom: 4vmin; }
   .menu, .number, .pagination {
     display: none; }
   .burger {
     display: block; }
-  html {
-    font-size: 13px; }
   .content-common {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
@@ -1176,7 +1252,9 @@ path {
         -ms-flex-pack: center;
             justify-content: center; }
   .form__button {
-    text-align: center; } }
+    text-align: center; }
+  .number--green {
+    display: inline-block; } }
 
 @media screen and (max-width: 480px) {
   html {
@@ -1235,4 +1313,20 @@ path {
     max-width: 230px;
     margin: 0 auto; }
   .center--form {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .container--footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .footer__left, .footer__right {
+    width: 100%;
+    text-align: center; }
+  .footer__right {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer__left, address {
+    margin-bottom: 2vmin; } }

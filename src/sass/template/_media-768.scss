@@ -19,6 +19,9 @@
   }
 }
 @media screen and (max-width: 768px){
+  html{
+    font-size: 13px;
+  }
   .title{
     margin-bottom: 4vmin;
   }
@@ -28,10 +31,8 @@
   .burger{
     display: block;
   }
-  //////////////////
-  html{
-    font-size: 13px;
-  }
+  ////////////////// main
+  
   .content-common{
     flex-wrap: nowrap;
     flex-direction: column;
@@ -60,7 +61,7 @@
   .advantage__text br{
     display: none;
   }
-  ///////////////////
+  /////////////////// why
    .container--why{
      max-width: 26.25rem;
    }
@@ -81,7 +82,7 @@
   .why__icon{
     margin-bottom: 2vmin;
   }
-  ////////////
+  //////////// team
   .container--team{
     max-width: 34rem;
   }
@@ -104,7 +105,7 @@
   .team__title{
     margin-bottom: 0.5vmin;
   }
-  ///////////////////
+  ///////////////////  comment
   .container--comment{
     max-width: 28.75rem;
   }
@@ -147,6 +148,10 @@
   }
   .form__button{
     text-align: center;
+  }
+  //////////// map
+  .number--green{
+    display: inline-block;
   }
 
 
