@@ -2,6 +2,30 @@
   background-image: url(../images/sec8/pattern.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+     &::before{
+      position: absolute;
+      content: '';
+      background-image: url(../images/sec8/leaf.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 8.4375rem;
+      height: 11.75rem;
+      bottom: 5vw;
+      right: 0;
+      z-index: 1;
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      background-image: url(../images/sec8/berry.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 2.9375rem;
+      height: 3rem;
+      bottom: 5vw;
+      left: 2vw;
+      z-index: 1;
+    }
 }
 .form{
   display: flex;

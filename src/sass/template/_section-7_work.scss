@@ -1,19 +1,28 @@
 .section-work{
-  background-color: $bg;
-
+  // background-color: $bg;
+  background-color: #f8faf9;
     &::before{
-      content: url(../images/sec7/leaf_pattern.png);
       position: absolute;
-      left: 0;
-      top: -25%;
-      z-index: 2  ;
+      content: '';
+      background-image: url(../images/sec7/leaf_pattern.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 6.375rem;
+      height: 20.0625rem;
+      top: -10vw;
+      z-index: 1;
     }
-
     &:after{
-      content: url(../images/sec7/blackberry.png);
+      content: '';
       position: absolute;
+      content: '';
+      background-image: url(../images/sec7/blackberry.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 12.5rem;
+      height: 16.5rem;
+      bottom: -7vw;
       right: 0;
-      bottom: -14%;
       z-index: 1;
     }
 }

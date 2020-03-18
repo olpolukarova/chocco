@@ -13,6 +13,9 @@
     margin-bottom: 0;
     top: -21vmin;
   }
+  .bar::before{
+    left: 0;
+  }
   .main{
     position: relative;
     top: -8vmin;
@@ -48,6 +51,14 @@
     margin-right: 3vmin;
   }
   //////// team
+  .section-team::before{
+    width: 4.125rem;
+    height: 4.125rem;
+  }
+  .section-team::after{
+    width: 4rem;
+    height: 4.5rem;
+  }
   .container--team{
     max-width: 100%;
   }
@@ -60,6 +71,15 @@
   }
 
   //////// comment
+  .section-comment::before{
+    width: 6.375rem;
+    height: 4.375rem;
+  }
+  .section-comment::after{
+    width: 7rem;
+    height: 10.0625rem;
+    bottom: -11vw;
+  }
   .comment__content-main{
     background-size: 24vmin;
   }
@@ -74,9 +94,24 @@
     max-width: 230px;
     margin: 0 auto;
   } 
+
+  ///////// work
+  .section-work::before{
+    width: 4.375rem;
+    height: 12.0625rem;
+  }
+  .section-work:after{
+    width: 6.5rem;
+    height: 10.5rem;
+  }
+
   ///////// form
   .center--form{
     max-width: 100%;
+  }
+  .form__row-mb{
+    max-width: 30rem;
+    margin: 0 auto;
   }
 
   /////////// map

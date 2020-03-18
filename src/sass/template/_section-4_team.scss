@@ -3,22 +3,28 @@
   background-repeat: no-repeat;
   background-position: right top;
     &::before{
-      content: url(../images/sec4/blueberries.png);
-      position: absolute;
+      content: '';
       width: 8.4375rem;
       height: 7rem;
-      top: -1.875rem;
-      right: 0;
+      background-image: url(../images/sec4/blueberries.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: -4vw;
+      right: 1vw;
       z-index: 1;
     }
     &::after{
-      content: url(../images/sec4/raspberry.png);
+      content: '';
+      background-image: url(../images/sec4/raspberry.png);
+      background-repeat: no-repeat;
+      background-size: cover;
       position: absolute;
       width: 6.5rem;
       height: 7.125rem;
-      bottom: -3.75rem;
-      left: 3.75rem;
-      z-index: 1;
+      bottom: -3vw;
+      left: 3vw;
+      z-index: 3;
     }
 }
 .team{
@@ -32,6 +38,14 @@
     &:last-child{
       margin-right: 0;  
     }      
+}
+.team__common--active{
+    .team__title-down{
+      transform: rotate(180deg);
+    }
+    .team__hiden{
+      display: block;}
+  
 }
 .team__foto{
   margin-bottom: 1.625rem;
@@ -59,22 +73,6 @@
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 6px solid $green;
-
-    &.active{
-      display: none;
-    }
-}
-.team__title-up{
-  display: none;
-  width: 0; 
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 6px solid $green;
-
-    &.active{
-      display: block;
-    }
 }
 .team__hiden{
   display: none; 

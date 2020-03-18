@@ -4,21 +4,23 @@
       position: absolute;
       content: '';
       background-image: url(../images/sec6/strawberry.png);
-      background-size: contain;
+      background-repeat: no-repeat;
+      background-size: cover;
       width: 9.375rem;
       height: 5.375rem;
-      top: 2.25rem;
-      right: 6.4375rem;
+      top: 2vw;
+      right: 6vw;
       z-index: 1;
     }
     &::after{
       position: absolute;
       content: '';
       background-image: url(../images/sec6/berrys.png);
-      background-size: contain;
+      background-repeat: no-repeat;
+      background-size: cover;
       width: 8.4375rem;
       height: 12.0625rem;
-      bottom: -10%;
+      bottom: -5vw;
       z-index: 10;
     }
 }

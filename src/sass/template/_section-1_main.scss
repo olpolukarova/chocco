@@ -5,30 +5,30 @@
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;  
-    // &::after{
-    //   content: '';
-    //   width: 28.75rem;
-    //   height: 21.3125rem;
-    //   background-image: url(../images/sec1/berrys-leafs.png);
-    //   background-repeat: no-repeat;
-    //   background-size: 100%;
-    //   position: absolute;
-    //   top: 61%;
-    //   left: 50%;
-    //   z-index: 1;
-    // }
-    // &::before{
-    //   content: '';
-    //   width: 3.6875rem;
-    //   height: 7rem;
-    //   background-image: url(../images/sec1/leaf-left.png);
-    //   background-repeat: no-repeat;
-    //   background-size: 100%;
-    //   position: absolute;
-    //   bottom: -7%;
-    //   left: 2%;
-    //   z-index: 1;
-    // }
+    &::after{
+      content: '';
+      width: 28.75rem;
+      height: 21.3125rem;
+      background-image: url(../images/sec1/berrys-leafs.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: -2vw;
+      left: 54vw;
+      z-index: 1;
+    }
+    &::before{
+      content: '';
+      width: 59px;
+      height: 112px;
+      background-image: url(../images/sec1/leaf_left.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: -4vw;
+      left: 6vw;
+      z-index: 1;
+    }
 }
 .content-common{
   display: flex;
