@@ -105,6 +105,15 @@
   .team__title{
     margin-bottom: 0.5vmin;
   }
+
+  //////// menu
+  .accordeon__section.active .accordeon__content{
+    width: 100%;
+  }
+  .accordeon__content-text{
+    font-size: 1rem;
+  }
+
   ///////////////////  comment
   .container--comment{
     max-width: 28.75rem;

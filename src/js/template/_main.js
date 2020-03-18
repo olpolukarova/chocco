@@ -13,7 +13,13 @@ $(".mobile-menu__link").click(function () {
   $(".mobile-menu").removeClass("active");
 });
 
-//
+//аккордеон секция меню
+$(".accordeon__section").click(function () {
+  $(".accordeon__section").addClass("active");
+});
+
+
+//карта
 ymaps.ready(init);
 var myMap;
 
