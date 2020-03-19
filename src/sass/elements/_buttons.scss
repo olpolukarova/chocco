@@ -1,17 +1,23 @@
 .button{
   cursor: pointer;
   transition: .4s;
-  padding: 19px 35px;
+  padding: 1.1875rem 2.1875rem;
   border-radius: 32px;  
   font-family: $font;
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-weight: 400;
   text-transform: uppercase; 
   border: 0;
-  outline: none;
+  // outline: none;
     &:hover{
       transition: .4s;
       color: #00abce;
+    }
+    &:active{
+      color: #000;
+    }
+    &:focus{
+       color: #000; 
     }
 }
 .button--main{
@@ -35,7 +41,7 @@
 .button--reset{
   background-color: transparent;
   color: $green;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-transform: none;
     &:hover{
       background-color: $white;

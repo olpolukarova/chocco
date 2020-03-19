@@ -1,17 +1,35 @@
 section.section.section-comment#sec6
-  .container
-    h2.title Отзывы
-    .comment
-      .comment__content-main
-        img.comment__avatar(src="/images/sec6/ava1.png", alt="avatar")
-        .comment__content
-          .comment__content-title Лучший перекус
-          .comment__content-text Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и&nbsp;удобно. 
-          .comment__content-name Алёна Хмельницкая
-      .comment__switch
-        a.comment__switch-link.comment__switch-link--active(href="#")
-          img(src="/images/sec6/ava1.png", alt="avatar")
-        a.comment__switch-link(href="#")
-          img(src="/images/sec6/ava2.png", alt="avatar")
-        a.comment__switch-link(href="#")
-          img(src="/images/sec6/ava3.png", alt="avatar")
+  .container.container--comment
+    .center
+      h2.title Отзывы
+      .comment
+        .comment__content-main
+          ul.comment__list
+            //- li.comment__item
+            //-   .comment__img
+            //-     img.comment__avatar(src="./images/sec6/ava1.png", alt="avatar")
+            //-   .comment__content
+            //-     .comment__content-title Лучший перекус
+            //-     .comment__content-text Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и&nbsp;удобно. 
+            //-     .comment__content-name Алёна Хмельницкая
+            li.comment__item.comment__item--active
+              .comment__img
+                img.comment__avatar(src="./images/sec6/ava2.png", alt="avatar")
+              .comment__content
+                .comment__content-title Лучшие батончики премиум уровня
+                .comment__content-text Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.
+                .comment__content-name Мария Орлова
+            //- li.comment__item
+            //-   .comment__img
+            //-     img.comment__avatar(src="./images/sec6/ava3.png", alt="avatar")
+            //-   .comment__content
+            //-     .comment__content-title Лучший перекус
+            //-     .comment__content-text Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и&nbsp;удобно. 
+            //-     .comment__content-name Алёна Хмельницкая
+        .comment__switch
+          a.comment__switch-link.comment__switch-link--active(href="#")
+            img(src="./images/sec6/ava1.png", alt="avatar")
+          a.comment__switch-link(href="#")
+            img(src="./images/sec6/ava2.png", alt="avatar")
+          a.comment__switch-link(href="#")
+            img(src="./images/sec6/ava3.png", alt="avatar")

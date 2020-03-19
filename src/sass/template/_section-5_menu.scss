@@ -1,63 +1,99 @@
 .section-menu{
-  background-image: url(/images/sec5/fon.jpg);
+  background-image: url(../images/sec5/fon.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      background: rgba(0, 0, 0, .3);
+      z-index: 1;
+    }
 }
+.title--menu{
+  position: absolute;
+  top: 7vw;
+  left: 5vw;
+  z-index: 2;
+}
+
 .accordeon{
   position: absolute;
   top: 0;
   right: 0;
+  bottom: 0;
   display: flex; 
   overflow: hidden;
-  height: 100vh;
-  width: 65%;
+  z-index: 2;
 }
 .accordeon__section{
   display: flex;
   position: relative;
   align-items: stretch;
+  transition: all .5s;
 
-    &.active .accordeon__section-content{
-      display: block;
+    &.active .accordeon__content{
+      width: 26.875rem;
     }
 }
-.accordeon__section-title{  
+.accordeon__title{  
   background-repeat: no-repeat;
-  background-size: cover;  
+  background-size: cover; 
+  background-position: center 0; 
   color: #ffffff;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 500;
   white-space: nowrap;
-  min-width: 100px;
+  min-width: 6.25rem;
   position: relative;
+  z-index: 2;
   cursor: pointer;
-  
-    h3{
+
+    &:after{
+      content: "";
       position: absolute;
-      transform: rotate(-90deg);
-      bottom: 10%;
+      top: 0;
+      bottom: 0;
       left: 0;
       right: 0;
+      display: block;
+      background: rgba(0, 0, 0, .8);
+      z-index: 1;
     }
-    &.milk{
-      background-image: url(/images/sec5/milk.png);
-    }
-    &.fruit{
-      background-image: url(/images/sec5/fruit.png);
-    }
-    &.berry{
-      background-image: url(/images/sec5/berry.png);
+    &:visited{
+    color: $white;
     }
 }
-
-.accordeon__section-content{
-  display: none;
+  
+.accordeon__title-text{
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.accordeon__content{
+  width: 0;
+  transition: width 0.5s;
+  overflow: hidden;
+  
+}
+.accordeon__content-text{
   background-color: #2f3234;
   opacity: 0.93;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
-  padding: 50px 30px;
+  padding: 3.125rem 1.875rem;
+  height: 100%;
 }

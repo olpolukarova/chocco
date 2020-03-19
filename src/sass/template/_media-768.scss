@@ -1,0 +1,207 @@
+@media(max-width: 1100px){
+  .menu__link, .number{
+    font-size: 1.7vw;
+  }  
+}
+@media screen and (max-width: 980px){
+  html{
+    font-size: 15px;
+  }
+  .comment__content-main{
+    background-size: 13vmin;
+  }
+  .section-main::after{
+    width: 23.75rem;
+    height: 17.3125rem;
+  }
+  .section-work::before{
+    top: -16vw;
+  }
+}
+@media screen and (max-width: 768px){
+  html{
+    font-size: 13px;
+  }
+  .title{
+    margin-bottom: 4vmin;
+  }
+  .menu, .number, .pagination{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+  ////////////////// main
+  .section-main::after, .section-main::before{
+    display: none;
+  }
+  .content-common{
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .main{
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .bar{
+    order: -1;
+    position: relative;
+    width: 70vw;
+    height: 27.5rem;
+    margin-bottom: 10vmin;
+
+      &::before{
+        content: '';
+        width: 23.25rem;
+        height: 15.75rem;
+        background-image: url(../images/sec1/768.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        left: 14vw;
+        z-index: 1;
+      }
+  }
+  .bar__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .title--main{
+    text-align: center;
+  }
+  .advantage__text br{
+    display: none;
+  }
+  /////////////////// why
+   .container--why{
+     max-width: 26.25rem;
+   }
+  .why{
+    flex-wrap: wrap;
+  }
+  .why__item{
+    margin-right: 0;
+    margin-bottom: 10vmin;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+
+  .why__item::before{
+    content: none;
+  }
+  .why__icon{
+    margin-bottom: 2vmin;
+  }
+  //////////// team
+  .section-team{
+    background-size: 9.6875rem 14.4375rem;
+  }
+  .container--team{
+    max-width: 34rem;
+  }
+  .team{
+    flex-wrap: wrap;
+    margin-right: -2vmin;
+  }
+  .team__common{
+    position: relative;
+    width: calc(50% - 2vmin );
+    margin-right: 2vmin;
+    margin-bottom: 3vmin;
+      &:last-child{
+        margin-right: 2vmin;
+      }
+  }
+  .team__hiden{
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1vmin;
+  }
+  .team__hiden-title, .team__hiden-text{
+    color: #ffffff;
+  }
+  .team__foto{
+    margin-bottom: 2vmin;
+    height: 30vmax;
+  }
+  .team__title{
+    margin-bottom: 0.5vmin;
+  }
+
+  //////// menu
+  .accordeon__section.active .accordeon__content{
+    width: 100%;
+  }
+  .accordeon__content-text{
+    font-size: 1rem;
+  }
+
+  ///////////////////  comment
+  .section-comment::before{
+    right: 0;
+  }
+  .container--comment{
+    max-width: 28.75rem;
+  }
+  .comment__item{
+    flex-direction: column;
+    text-align: center;
+  }
+  .comment__avatar{
+    margin-right: 0;
+  }
+  .comment__content-main{
+    background-size: 10vmin;
+  }
+  .comment__img{
+    margin-bottom: 2vmin;
+  }
+  .comment__content-main{
+    padding: 4rem;
+  }
+  .comment__content-title{
+    margin-bottom: 1vmin;
+  }
+  .comment__content-text{
+    margin: 0 auto 4vmin;
+  }
+  ///////// form
+  .section-form::after, .section-form::before{
+    display: none;
+  }
+  .center--form{
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  .form{
+    flex-direction: column;
+  }
+  .form__column{
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 3vmin;
+      &:last-child{
+        margin-bottom: 0; 
+      }
+  }
+  .form__row-mb, .form__chec-label{
+    justify-content: center;
+  }
+  .form__button{
+    text-align: center;
+  }
+  //////////// map
+  .number--green{
+    display: inline-block;
+  }
+
+
+
+
+}

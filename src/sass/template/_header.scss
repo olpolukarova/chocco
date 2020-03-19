@@ -1,5 +1,5 @@
 .header{
-  padding: 25px 0;
+  padding: 1.5625rem 0;
 }
 .nav{
   display: flex;
@@ -10,7 +10,7 @@
   display: flex;
 }
 .menu__item{  
-  margin-right: 25px;
+  margin-right: 1.5625rem;
   transition: .4s;
   
     &:last-child{
@@ -25,30 +25,32 @@
 .menu__link{
   border: 2px solid transparent;
 }
-.menu__link, .number{
-  color: $white;
-  font-family: $font;
-  font-size: 18px;
-  font-weight: 400; 
-}
-
-.number{  
-  font-size: 24px;
-  text-transform: uppercase;
-  transition: .4s;
+.number{
+  display: inline-block;
   border: 2px solid transparent;
-  
-    &:before{
-      content: "";      
-      display: inline-block;
-      margin-right: 6px;  
-      width: 12px;
-      height: 11px;
-      background-image: url(/images/sec1/phone.svg);
-      background-repeat: no-repeat;
-    }
+  background-image: url(../images/sec1/phone.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75rem 0.6875rem;
+  background-position: center left;
+  padding-left: 1.125rem;
+  transition: .4s;
     &:hover{
       transition: .4s;
       border-bottom: 2px solid #ffffff;
     }
+}
+
+.menu__link, .number__link{
+  color: $white;
+  font-family: $font;
+  font-size: 1.125rem;
+  font-weight: 400; 
+}
+
+.number__link{  
+  font-size: 1.5rem;
+  text-transform: uppercase;  
 } 
+.burger{
+  display: none;
+}

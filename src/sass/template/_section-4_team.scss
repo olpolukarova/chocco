@@ -1,25 +1,30 @@
 .section-team{
-  padding-top: 70px;
-  background-image: url(/images/sec4/leaf_pattern.png);
+  background-image: url(../images/sec4/leaf_pattern.png);
   background-repeat: no-repeat;
   background-position: right top;
     &::before{
-      content: url(/images/sec4/blueberries.png);
+      content: '';
+      width: 8.4375rem;
+      height: 7rem;
+      background-image: url(../images/sec4/blueberries.png);
+      background-repeat: no-repeat;
+      background-size: cover;
       position: absolute;
-      width: 135px;
-      height: 112px;
-      top: -30px;
-      right: 0;
+      top: -4vw;
+      right: 1vw;
       z-index: 1;
     }
     &::after{
-      content: url(/images/sec4/raspberry.png);
+      content: '';
+      background-image: url(../images/sec4/raspberry.png);
+      background-repeat: no-repeat;
+      background-size: cover;
       position: absolute;
-      width: 104px;
-      height: 114px;
-      bottom: -60px;
-      left: 60px;
-      z-index: 1;
+      width: 6.5rem;
+      height: 7.125rem;
+      bottom: -3vw;
+      left: 3vw;
+      z-index: 3;
     }
 }
 .team{
@@ -28,27 +33,39 @@
 }
 .team__common{
   width: 100%;
-  margin-right: 20px;
+  margin-right: 1.25rem;
   text-align: center;
     &:last-child{
       margin-right: 0;  
     }      
 }
+.team__common--active{
+    .team__title-down{
+      transform: rotate(180deg);
+    }
+    .team__hiden{
+      display: block;}
+  
+}
 .team__foto{
-  margin-bottom: 26px;
+  margin-bottom: 1.625rem;
+}
+.team__foto-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .team__title{
   color: $light-black;
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 .team__title-name{
-  margin-right: 7px;
+  margin-right: 0.4375rem;
 }
 .team__title-down{
   width: 0; 
@@ -56,22 +73,6 @@
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 6px solid $green;
-
-    &.active{
-      display: none;
-    }
-}
-.team__title-up{
-  display: none;
-  width: 0; 
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 6px solid $green;
-
-    &.active{
-      display: block;
-    }
 }
 .team__hiden{
   display: none; 
@@ -82,14 +83,14 @@
 }
 .team__hiden-title{
   color: $light-black;
-  font-size: 18px;
+  font-size: $font-size;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
 }
 .team__hiden-text{
   color: $grey;
-  font-size: 18px;
+  font-size: $font-size;
   font-weight: 300;
-  max-height: 100px;
+  max-height: 6.25rem;
   overflow-y: auto;
 }

@@ -1,0 +1,136 @@
+@media screen and (max-width: 480px){
+  html{
+    font-size: 11px;
+  }
+  .title{
+    font-size: 8.5vw;
+    margin-bottom: 10vmin;
+  }
+  /////////// main
+  .bar{
+    width: 76vw;
+    height: 21.5rem;
+    margin-bottom: 0;
+    top: -21vmin;
+  }
+  .bar::before{
+    left: 0;
+  }
+  .main{
+    position: relative;
+    top: -8vmin;
+  }
+  .title--main{
+    font-size: 8vw;
+    margin-bottom: 1vmin;
+  }
+  .main__subtitle{
+    font-size: 3.3vw;
+    margin-bottom: 2.8vw;
+  }
+  .advantage__text br{
+    display: block;
+  }
+  .advantage__item{
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+  ///////// why
+  .section-why{
+    background: none;
+  }
+  .container--why{
+    max-width: 100%;
+  }
+  .why__item{
+    display: flex;
+    text-align: left;
+  }
+  .why__icon{
+    flex-shrink: 0;
+    margin-right: 3vmin;
+  }
+  //////// team
+  .section-team::before{
+    width: 4.125rem;
+    height: 4.125rem;
+  }
+  .section-team::after{
+    width: 4rem;
+    height: 4.5rem;
+  }
+  .container--team{
+    max-width: 100%;
+  }
+  //////// menu
+  .accordeon__title{
+    min-width: 4rem;
+  }
+  .accordeon__title{
+    font-size: 2.5rem;
+  }
+
+  //////// comment
+  .section-comment::before{
+    width: 6.375rem;
+    height: 4.375rem;
+  }
+  .section-comment::after{
+    width: 7rem;
+    height: 10.0625rem;
+    bottom: -11vw;
+  }
+  .comment__content-main{
+    background-size: 24vmin;
+  }
+  .container--comment{
+    max-width: 100%;
+  }
+  .comment__avatar{
+    width: 7.8125rem;
+    height: 7.8125rem;
+  }
+  .comment__content-title {
+    max-width: 230px;
+    margin: 0 auto;
+  } 
+
+  ///////// work
+  .section-work::before{
+    width: 4.375rem;
+    height: 12.0625rem;
+  }
+  .section-work:after{
+    width: 6.5rem;
+    height: 10.5rem;
+  }
+
+  ///////// form
+  .center--form{
+    max-width: 100%;
+  }
+  .form__row-mb{
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+
+  /////////// map
+  .container--footer{
+    flex-direction: column;
+  }
+  .footer__left, .footer__right{
+    width: 100%;
+    text-align: center;
+  }
+  .footer__right{
+    justify-content: center;
+  }
+  .footer__left, address{
+    margin-bottom: 2vmin;
+  }
+  
+
+
+
+
+}

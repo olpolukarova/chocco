@@ -8,7 +8,7 @@ $green: #0b4d3c;
 $bg: #f8faf9;
 
 $font-color: $black;
-$font-size: 18px;
+$font-size: 1.125rem;
 $font-lineheight: 1.16em;
 $link-color: $black;
 $link-color-hover: $font-color;
@@ -23,9 +23,12 @@ $placeholder-color: rgba(65, 51, 51, 0.5);
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  height: 100%;
 }
 
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: $font;
@@ -67,7 +70,7 @@ input[type="file"]{
 img{
   max-width: 100%;
   max-height: 100%;
-  // object-fit: contain;
+  object-fit: contain;
 }
 
 a{
@@ -138,14 +141,6 @@ h3{
   margin: 0;
   padding: 0;
 }
-.container{
-  max-width: 980px;
-  position: relative;
-	width: 100%;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
 ul,
 li,
@@ -161,23 +156,47 @@ li{
 path{
   transition: .4s;
 }
-
+.wrap{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.container{
+  max-width: 61.25rem;
+  min-width: 18.75rem;
+  position: relative;
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+.section{
+  height: 100vh;
+  min-height: 34.375rem;
+  width: 100%;
+  position: relative;
+  // overflow: hidden;
+}
+.center{
+  position: relative;
+  top: 50%;  
+  transform: translateY(-50%);   
+}
 .title{
   color: $black;
   font-family: $font;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: normal;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 .title--main{
   color: $white;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 1;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 .title--form{
   color: $green;
@@ -185,14 +204,4 @@ path{
 .title--menu {
   color: #ffffff;
   text-align: left;
-}
-.section-center{
-  position: relative;
-  top: 50%;  
-  transform: translateY(-50%);
-  width: 100%;
-  max-width: 980px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
