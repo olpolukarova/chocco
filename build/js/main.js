@@ -13,10 +13,15 @@ $(".mobile-menu__link").click(function () {
   $(".mobile-menu").removeClass("active");
 });
 
-//аккордеон секция меню
-$(".accordeon__section").click(function () {
-  $(".accordeon__section").addClass("active");
-});
+//slick-slider
+// $(document).ready(function () {
+//   $('.slider').slick({
+//     prevArrow: $('.slider_arrow_left'),
+//     nextArrow: $('.slider_arrow_right')
+
+
+//   });
+// });
 
 
 //карта

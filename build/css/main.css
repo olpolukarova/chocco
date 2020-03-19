@@ -584,6 +584,21 @@ path {
   font-size: 1.125rem;
   font-weight: 300; }
 
+.section-slider {
+  background-color: #f8faf9; }
+
+.slider__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.slider__right {
+  width: 50%; }
+
+.slider__left {
+  width: 50%; }
+
 .section-team {
   background-image: url(../images/sec4/leaf_pattern.png);
   background-repeat: no-repeat;

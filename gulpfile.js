@@ -42,7 +42,7 @@ gulp.task('scripts', ['delJs'], function () {
 		'src/libs/mask/tmask.js',
 		'src/libs/mask/mask.js',
 		// 'src/libs/datepicker.js',
-		// 'src/libs/slick.js',
+		'src/libs/slick.js',
 		// 'src/libs/scrolloverflow.js',
 		// 'src/libs/fullpage.js',
 		// 'src/libs/fancybox.js',
@@ -69,8 +69,6 @@ gulp.task('css-libs', ['sass'], function () {
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(gulp.dest('build/css'))
 });
-
-
 
 gulp.task('browser-sync', function () {
 	browserSync({
