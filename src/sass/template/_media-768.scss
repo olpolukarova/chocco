@@ -109,7 +109,6 @@
     margin-right: -2vmin;
   }
   .team__common{
-    position: relative;
     width: calc(50% - 2vmin );
     margin-right: 2vmin;
     margin-bottom: 3vmin;
@@ -118,8 +117,6 @@
       }
   }
   .team__hiden{
-    position: absolute;
-    z-index: 1;
     background: rgba(0, 0, 0, 0.6);
     padding: 1vmin;
   }

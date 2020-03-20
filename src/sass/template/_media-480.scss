@@ -50,6 +50,11 @@
     flex-shrink: 0;
     margin-right: 3vmin;
   }
+  //////// slider
+  .section-slider::before{
+    display: none;
+  }
+  
   //////// team
   .section-team::before{
     width: 4.125rem;
