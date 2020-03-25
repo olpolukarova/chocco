@@ -1467,7 +1467,8 @@ path {
     width: 18.875rem;
     right: -9999px; }
   .ingredients:hover .ingredients__dropdown {
-    right: 100%; }
+    right: 100%;
+    left: 0; }
   .slider__price {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
