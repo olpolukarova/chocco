@@ -1,27 +1,28 @@
 //меню-бургер
-$(".burger").click(function () {
-  $(".mobile-menu").addClass("active");
-});
-
-
-$(".close").click(function () {
-  $(".mobile-menu").removeClass("active");
-});
-
-
-$(".mobile-menu__link").click(function () {
-  $(".mobile-menu").removeClass("active");
-});
-
-//slick-slider
-// $(document).ready(function () {
-//   $('.slider').slick({
-//     prevArrow: $('.slider_arrow_left'),
-//     nextArrow: $('.slider_arrow_right')
-
-
-//   });
+// $(".burger").click(function () {
+//   $(".mobile-menu").addClass("active");
 // });
+
+
+// $(".close").click(function () {
+//   $(".mobile-menu").removeClass("active");
+// });
+
+
+// $(".mobile-menu__link").click(function () {
+//   $(".mobile-menu").removeClass("active");
+// });
+
+
+document.getElementById('.burger').onclick = function () {
+  document.getElementById('.mobile-menu').classList.add('active');
+}
+
+
+
+
+
+
 
 
 //карта

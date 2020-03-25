@@ -54,6 +54,26 @@
   .section-slider::before{
     display: none;
   }
+  .title--slider{
+    font-size: 7.5vw;
+  }
+  .ingredients{
+    right: 0;
+    top: -18%;
+  }
+  .slider__arrow--left{
+    margin-left: 5%;
+  }
+  .slider__arrow--right {
+    margin-right: 5%;
+  }
+  .section-slider::after{
+    height: 30.125rem;
+  }
+  .slider__img{
+    max-width: 65%;
+    margin: 0 auto;
+  }
   
   //////// team
   .section-team::before{
