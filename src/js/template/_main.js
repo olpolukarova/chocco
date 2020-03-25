@@ -1,22 +1,19 @@
-//меню-бургер
-// $(".burger").click(function () {
-//   $(".mobile-menu").addClass("active");
-// });
+меню-бургер
+$(".burger").click(function () {
+  $(".mobile-menu").addClass("active");
+});
 
 
-// $(".close").click(function () {
-//   $(".mobile-menu").removeClass("active");
-// });
+$(".close").click(function () {
+  $(".mobile-menu").removeClass("active");
+});
 
 
-// $(".mobile-menu__link").click(function () {
-//   $(".mobile-menu").removeClass("active");
-// });
+$(".mobile-menu__link").click(function () {
+  $(".mobile-menu").removeClass("active");
+});
 
 
-document.getElementById('.burger').onclick = function () {
-  document.getElementById('.mobile-menu').classList.add('active');
-}
 
 
 
