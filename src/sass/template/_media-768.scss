@@ -2,68 +2,9 @@
   .menu__link, .number{
     font-size: 1.7vw;
   }  
-  .slider__arrow--left{
-    margin-left: 5%;
-  }
-  .slider__arrow--right{
-    margin-right: 5%;
-  }
 }
-@media(max-width: 930px){
-  .center--slider{
-    max-width: 35.625rem;
-    margin: 0 auto;
-  }
-  .slider__item{
-    flex-direction: column;
-    text-align: center;
-  }
-  .slider__left{
-    width: 100%;
-    margin-right: 0;
-  }
-  .slider__right{
-    width: 100%;
-  }
-  .title--slider{
-    text-align: center;
-  }
-  .ingredients{
-    position: absolute;
-    top: -9%;
-    right: -30%;
-  }
-  .ingredients__dropdown{
-    width: 18.875rem;
-    right: -9999px;
-  }
-  .ingredients:hover .ingredients__dropdown{
-    right: 100%;
-    left: 0;
-  }
-  .slider__price{
-    justify-content: center;
-  }
-  .clider__calories{
-    display: flex;
-    justify-content: center;
-    text-align: left;
-  }
-  .clider__calories-inner{
-    margin-right: 7vw;
-  }
 
-  .slider__arrow{
-    top: 37%;
-  }
-  .slider__arrow--left{
-    margin-left: 21%;
-  }
-  .slider__arrow--right{
-    margin-right: 21%;
-  }
 
-}
 @media screen and (max-width: 980px){
   html{
     font-size: 15px;
@@ -79,6 +20,7 @@
     top: -16vw;
   }
 }
+
 @media screen and (max-width: 768px){
   html{
     font-size: 13px;
@@ -159,8 +101,33 @@
     margin-bottom: 2vmin;
   }
   //////////// slider
+
+  .slider__item{
+    flex-direction: column;
+    text-align: center;
+  }
+  .slider__left{
+    width: 100%;
+    margin-right: 0;
+  }
+  .slider__right{
+    width: 100%;
+  }
+  .title--slider{
+    text-align: center;
+
+       br{
+         display: block;
+       }
+  }
   .ingredients{
-    right: -24%;
+    position: absolute;
+    top: -17vw;
+    right: 0;
+  }
+  .slider__subtitle{
+    max-width: 36.625rem;
+    margin: 0 auto 3vmin;
   }
   .ingredients__dropdown{
     width: 18.875rem;
@@ -168,8 +135,20 @@
   }
   .ingredients:hover .ingredients__dropdown{
     right: 100%;
+    left: 0;
   }
-
+  .slider__price{
+    justify-content: center;
+  }
+  .clider__calories{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 4vmin;
+  }
+  .clider__calories-inner{
+    margin-right: 7vw;
+  }
 
   //////////// team
   .section-team{
