@@ -1,13 +1,14 @@
 .button{
   cursor: pointer;
   transition: .4s;
-  padding: 1.1875rem 2.1875rem;
+  padding: 1.2188rem 2.1875rem;
   border-radius: 32px;  
   font-family: $font;
   font-size: 1.1875rem;
   font-weight: 400;
   text-transform: uppercase; 
   border: 0;
+  line-height: normal;
   // outline: none;
     &:hover{
       transition: .4s;
@@ -44,8 +45,21 @@
   font-size: 1.125rem;
   text-transform: none;
     &:hover{
-      background-color: $white;
+      // background-color: $white;
       color: $green;
+      text-decoration: underline;
       transition: .4s;
     }
 }
+.button--modal{
+  background-color: $green;
+  color: $white;
+  border: 1px solid transparent;
+    &:hover{
+      background-color: $white;
+      color: $green;
+      border: 1px solid $green;
+      transition: .4s;
+    }
+}
+

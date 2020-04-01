@@ -26,7 +26,7 @@
   }
   .main__subtitle{
     font-size: 3.3vw;
-    margin-bottom: 2.8vw;
+    margin-bottom: 4vw;
   }
   .advantage__text br{
     display: block;
@@ -36,6 +36,19 @@
     margin-right: 1rem;
   }
   ///////// why
+   
+  .why{
+    flex-wrap: wrap;
+  }
+
+  .why__item{
+    margin-right: 0;
+    margin-bottom: 10vmin;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+
   .section-why{
     background: none;
   }
@@ -58,10 +71,29 @@
   .title--slider{
     font-size: 7.5vw;
     margin-bottom: 5vmin;
+     
+      br{
+         display: block;
+       }
   } 
-  
-  
+  .container--slider{
+    width: 95%;
+  }
+  .slider__arrow{
+    top: 34%;
+  }
+
   //////// team
+  .team__foto{
+    width: 42%;
+    margin: 0 auto 0.3rem;
+  }
+  // .team__title{
+  //   font-size: 5vw;
+  // }
+  // .team__hiden-title{
+  //   font-size: 4vw;
+  // }
   .section-team::before{
     width: 4.125rem;
     height: 4.125rem;
@@ -70,15 +102,15 @@
     width: 4rem;
     height: 4.5rem;
   }
-  .container--team{
-    max-width: 100%;
-  }
+
   //////// menu
   .accordeon__title{
     min-width: 4rem;
   }
-  .accordeon__title{
-    font-size: 2.5rem;
+  .accordeon__section.active{
+    width: 100%;
+    flex-shrink: 0;
+    // order: 1;
   }
 
   //////// comment
@@ -93,6 +125,7 @@
   }
   .comment__content-main{
     background-size: 24vmin;
+    padding: 3.125rem 0;
   }
   .container--comment{
     max-width: 100%;
@@ -102,8 +135,8 @@
     height: 7.8125rem;
   }
   .comment__content-title {
-    max-width: 230px;
-    margin: 0 auto;
+    max-width: 15.625rem;
+    margin: 0 auto 1vmin;
   } 
 
   ///////// work
@@ -117,12 +150,18 @@
   }
 
   ///////// form
+  .title--form{
+    margin-bottom: 2vmin;
+  }
   .center--form{
     max-width: 100%;
   }
   .form__row-mb{
     max-width: 30rem;
     margin: 0 auto;
+  }
+  .form__row-mb, .form__chec-label{
+    justify-content: center;
   }
 
   /////////// map

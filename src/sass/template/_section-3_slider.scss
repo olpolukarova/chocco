@@ -25,7 +25,7 @@
 .slider{
   overflow: hidden;
   display: flex;
-  will-change: right;
+  // will-change: right;
   transition: right .5s;
 }
 .slider__item{
@@ -48,7 +48,7 @@
   width: 5.625rem;
   height: 5.625rem;
   border-radius: 5px;  
-  background-color: #61c4d9;  
+  background-color: $blue;  
   display: flex;
   
   transition: .4s;
@@ -61,21 +61,22 @@
       transition: background-color .4s;
     }    
 }
-// .ingredients:hover .ingredients__dropdown{
-//   display: block;
-//   left: 100%;
-// }
+.ingredients:hover .ingredients__table{
+  left: 100%;
+  display: table;
+  transition: display .5s;
+}
 
 .ingredients__block{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 10%;
+  position: absolute;
 }
-.ingredients__svg{
+
+.ingredients__svg-img{
   width: 3.1875rem;
-  height: 3.1875rem;
-  margin-bottom: 0.5vw;
+  height: 3.1875rem;  
 
     path{
       fill: #ffffff;
@@ -91,16 +92,6 @@
   text-align: center;
 }
 
-.ingredients__dropdown{
-  display: block;
-  position: absolute;   
-  width: 16.875rem;
-  height: 23.875rem;
-  top: 0;
-  // left: 5.625rem; 
-  left: -9999px;
-}
-
 .ingredients__table{
   width: 100%;
   color: #333333;
@@ -108,10 +99,15 @@
   font-weight: 500;
   line-height: 1.5rem;
   padding: 0.625rem 0 0 25px;
-  background-color: #fff; 
-  opacity: .9; 
+  background-color: rgba(255, 255, 255, 0.9); 
+  transition: display .5s;
+  display: none;
   text-transform: none;
   border-radius: 5px;
+  position: absolute;   
+  width: 16.875rem;
+  height: 23.875rem;
+  left: -9999px;
     
     td{
       padding: 0.3125rem 0;
@@ -119,8 +115,7 @@
 }
 
 .title--slider{
-  text-align: left;
-  color: #0d0d0d;
+  text-align: left; 
   font-size: 2.25rem;
   margin-bottom: 3vmin;
 
@@ -137,7 +132,7 @@
 .clider__calories{
   display: flex;
   margin-bottom: 3vmin;
-  color: #333333;
+  color: $grey;
   font-size: 1.125rem;  
   
     &:first-child{
@@ -154,10 +149,11 @@
 
     p{
       font-weight: 700;
+      color: $black;
     }    
 }
 .slider__price{
-  color: #0d0d0d;
+  color: #151515;
   font-size: 3.75rem;
   font-weight: 300;
   line-height: 3.75rem;
@@ -173,7 +169,7 @@
 
     &:hover{
       transition: .4s;
-      background-color: #61c4d9;
+      background-color: $blue;
       color: #ffffff;
     }
 }
@@ -195,7 +191,7 @@
 
     &:hover svg { 
       transition: .2s;
-      fill: #61c4d9;
+      fill: $blue;
     }
 }
 .slider__arrow--left{

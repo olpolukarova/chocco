@@ -37,7 +37,6 @@
 .accordeon__section{
   display: flex;
   position: relative;
-  align-items: stretch;
   transition: all .5s;
 
     &.active .accordeon__content{
@@ -65,7 +64,7 @@
       left: 0;
       right: 0;
       display: block;
-      background: rgba(0, 0, 0, .8);
+      background-color: rgba(0, 0, 0, .8);
       z-index: 1;
     }
     &:visited{

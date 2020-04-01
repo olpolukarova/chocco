@@ -38,13 +38,21 @@
   .section-main::after, .section-main::before{
     display: none;
   }
+  .section-main{
+    background-position: right 12%;
+    background-size: 34.6875rem;
+  }
   .content-common{
     flex-wrap: nowrap;
     flex-direction: column;
   }
+  // .center--main {
+  //   top: calc(50% - 7.75rem);
+  // }
+
   .main{
     width: 100%;
-    max-width: 40.625rem;
+    // max-width: 40.625rem;
     margin: 0 auto;
     text-align: center;
   }
@@ -53,7 +61,7 @@
     position: relative;
     width: 70vw;
     height: 27.5rem;
-    margin-bottom: 10vmin;
+    margin-bottom: 3vmin;
 
       &::before{
         content: '';
@@ -75,32 +83,57 @@
   }
   .title--main{
     text-align: center;
+    margin-bottom: 1vmin;
+    line-height: normal;
   }
-  .advantage__text br{
+  .main__subtitle{
+    font-size: 21px;
+    font-weight: 300;
+  }
+  // .advantage__text br{
+  //   display: none;
+  // }
+  .advantage{
     display: none;
   }
+
   /////////////////// why
-   .container--why{
-     max-width: 26.25rem;
-   }
-  .why{
-    flex-wrap: wrap;
-  }
-  .why__item{
-    margin-right: 0;
-    margin-bottom: 10vmin;
-      &:last-child{
-        margin-bottom: 0;
-      }
-    }
+
+  //  .container--why{
+  //    max-width: 26.25rem;
+  //  }
+
+  // .why{
+  //   flex-wrap: wrap;
+  // }
+
+  // .why__item{
+  //   margin-right: 0;
+  //   margin-bottom: 10vmin;
+  //     &:last-child{
+  //       margin-bottom: 0;
+  //     }
+  //   }
 
   .why__item::before{
     content: none;
   }
+
   .why__icon{
     margin-bottom: 2vmin;
   }
+  .title--why{
+    margin-bottom: 5vmin;
+  }
+  .section-why{
+    background-position: 0 17%;
+  }
+
   //////////// slider
+
+  .section-slider::before{
+    top: -23vw;
+  }
 
   .slider__item{
     flex-direction: column;
@@ -114,29 +147,17 @@
     width: 100%;
   }
   .title--slider{
-    text-align: center;
-
-       br{
-         display: block;
-       }
+    text-align: center; 
+    margin-bottom: 2vmin;      
   }
   .ingredients{
-    position: absolute;
-    top: -17vw;
-    right: 0;
+   display: none;
   }
   .slider__subtitle{
     max-width: 36.625rem;
     margin: 0 auto 3vmin;
   }
-  .ingredients__dropdown{
-    width: 18.875rem;
-    right: -9999px;
-  }
-  .ingredients:hover .ingredients__dropdown{
-    right: 100%;
-    left: 0;
-  }
+ 
   .slider__price{
     justify-content: center;
   }
@@ -150,46 +171,70 @@
     margin-right: 7vw;
   }
 
+  .slider__img img{
+    width: 88%;
+  }
+  .container--slider{
+    width: 70%;
+  }
+
+  .slider__arrow{
+    top: 43%;
+  }
+
   //////////// team
   .section-team{
     background-size: 9.6875rem 14.4375rem;
   }
   .container--team{
-    max-width: 34rem;
+    max-width: 20rem;
   }
   .team{
-    flex-wrap: wrap;
-    margin-right: -2vmin;
+    flex-direction: column;   
   }
-  .team__common{
-    width: calc(50% - 2vmin );
-    margin-right: 2vmin;
-    margin-bottom: 3vmin;
-      &:last-child{
-        margin-right: 2vmin;
-      }
-  }
-  .team__hiden{
-    background: rgba(0, 0, 0, 0.6);
-    padding: 1vmin;
-  }
-  .team__hiden-title, .team__hiden-text{
-    color: #ffffff;
-  }
-  .team__foto{
+  .team__common{    
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
     margin-bottom: 2vmin;
-    height: 30vmax;
+      &:last-child{
+        margin-bottom: 0;
+      }    
   }
+  
+  .team__foto{
+    display: none;
+    padding-top: 2vmin;
+   
+  }
+
   .team__title{
+    font-size: 4vw;
     margin-bottom: 0.5vmin;
+    order: -1;
   }
+
+  .team__hiden-title{
+    font-size: 3.2vw;
+    font-weight: 600;
+    margin-bottom: 1vmin;
+  }
+  
+  .team__common--active{
+
+    .team__foto--open{
+      display: block;
+    }
+}
 
   //////// menu
   .accordeon__section.active .accordeon__content{
     width: 100%;
   }
+  
   .accordeon__content-text{
     font-size: 1rem;
+    padding: 6.0625rem 1.875rem 1.875rem;
   }
 
   ///////////////////  comment
@@ -197,7 +242,7 @@
     right: 0;
   }
   .container--comment{
-    max-width: 28.75rem;
+    max-width: 100%;
   }
   .comment__item{
     flex-direction: column;
@@ -205,6 +250,8 @@
   }
   .comment__avatar{
     margin-right: 0;
+    width: 9.1875rem;
+    height: 9.1875rem;
   }
   .comment__content-main{
     background-size: 10vmin;
@@ -220,13 +267,14 @@
   }
   .comment__content-text{
     margin: 0 auto 4vmin;
+    max-width: 100%;
   }
   ///////// form
   .section-form::after, .section-form::before{
     display: none;
   }
   .center--form{
-    max-width: 30rem;
+    max-width: 31.25rem;
     margin: 0 auto;
   }
   .form{
@@ -240,9 +288,7 @@
         margin-bottom: 0; 
       }
   }
-  .form__row-mb, .form__chec-label{
-    justify-content: center;
-  }
+  
   .form__button{
     text-align: center;
   }

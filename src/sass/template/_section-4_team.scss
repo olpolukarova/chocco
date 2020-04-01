@@ -27,7 +27,7 @@
 }
 .team{
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 .team__common{
   position: relative;
@@ -39,13 +39,15 @@
     }      
 }
 .team__common--active{
+
     .team__title-down{
       transform: rotate(180deg);
     }
     .team__hiden{
-      display: block;}
-  
+      display: block;
+    } 
 }
+
 .team__foto{
   margin-bottom: 1.625rem;
 }
@@ -55,9 +57,9 @@
   object-fit: cover;
 }
 .team__title{
-  color: $light-black;
+  color: $black;
   font-size: 1.3125rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 0.9375rem;
   display: flex;
   align-items: center;
@@ -75,12 +77,10 @@
 }
 .team__hiden{
   display: none; 
-  position: absolute;
-  z-index: 5;
 }
 
 .team__hiden-title{
-  color: $light-black;
+  color: $black;
   font-size: $font-size;
   font-weight: 400;
   margin-bottom: 0.3125rem;

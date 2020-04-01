@@ -45,6 +45,9 @@
     }
 }
 .comment__item{
+  display: none;
+}
+.comment__item--active{
   display: flex;
 }
 .comment__avatar{
@@ -54,9 +57,9 @@
   object-fit: cover;
 }
 .comment__content-title{
-  color: $light-black;
+  color: $black;
   font-size: 1.875rem;
-  font-weight: 500; 
+  font-weight: 700; 
   margin-bottom: 1.875rem;
   line-height: normal;
 }
@@ -68,7 +71,7 @@
   max-width: 27.5rem;
 }
 .comment__content-name{
-  color: $grey;
+  color: $black;
   font-size: $font-size;
   font-weight: 500;
 }
