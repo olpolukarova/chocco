@@ -203,7 +203,7 @@
   }
   
   .team__foto{
-    display: none;
+    height: 0;
     padding-top: 2vmin;
    
   }
@@ -222,8 +222,8 @@
   
   .team__common--active{
 
-    .team__foto--open{
-      display: block;
+    .team__foto{
+      height: 100%;
     }
 }
 

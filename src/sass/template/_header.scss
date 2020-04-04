@@ -53,4 +53,8 @@
 } 
 .burger{
   display: none;
+  position: fixed;
+  right: 0;
+  margin-right: 3%;
+  z-index: 5;
 }

@@ -32,6 +32,7 @@
   background-repeat: no-repeat;
   background-position: right 0;
   margin-bottom: 1.875rem;
+  overflow: hidden;
     &::after{
       content: '';
       position: absolute;
@@ -44,12 +45,21 @@
       transform: translateX(-50%);
     }
 }
-.comment__item{
-  display: none;
-}
-.comment__item--active{
+.comment__list{
   display: flex;
+  width: 100%;
+  transition: transform 2s;
+  
 }
+.comment__item{
+  display: flex;
+  flex: 0 0 100%;    
+  padding-top: 3.3125rem;
+  padding-left: 3.9375rem;
+  padding-right: 3.9375rem;
+  position: relative;
+}
+
 .comment__avatar{
   width: 15.875rem;
   height: 16.25rem;

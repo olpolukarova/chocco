@@ -18,7 +18,8 @@ body {
   font-weight: 400;
   line-height: 1.16em;
   color: #000000;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   body.hidden {
     overflow: hidden; }
 
@@ -123,6 +124,7 @@ path {
   transition: .4s; }
 
 .wrap {
+  min-height: 100%;
   height: 100%;
   width: 100%;
   position: relative; }
@@ -177,7 +179,7 @@ path {
   -webkit-transition: .4s;
   -o-transition: .4s;
   transition: .4s;
-  padding: 1.2188rem 2.1875rem;
+  padding: 1.125rem 2.1875rem;
   -webkit-border-radius: 32px;
           border-radius: 32px;
   font-family: "Alegreya Sans", Arial, Helvetica sans-serif;
@@ -418,7 +420,11 @@ path {
   text-transform: uppercase; }
 
 .burger {
-  display: none; }
+  display: none;
+  position: fixed;
+  right: 0;
+  margin-right: 3%;
+  z-index: 5; }
 
 .pagination {
   position: fixed;
@@ -651,15 +657,19 @@ path {
     bottom: -50%;
     right: 0; }
 
+.slider-box {
+  overflow: hidden; }
+
 .slider {
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: right .5s;
-  -o-transition: right .5s;
-  transition: right .5s; }
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
 
 .slider__item {
   display: -webkit-box;
@@ -888,7 +898,7 @@ path {
           transform: rotate(180deg); }
 
 .team__common--active .team__hiden {
-  display: block; }
+  height: 100%; }
 
 .team__foto {
   margin-bottom: 1.625rem; }
@@ -915,7 +925,8 @@ path {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  cursor: pointer; }
 
 .team__title-name {
   margin-right: 0.4375rem; }
@@ -928,7 +939,8 @@ path {
   border-top: 6px solid #0b4d3c; }
 
 .team__hiden {
-  display: none; }
+  height: 0;
+  overflow: hidden; }
 
 .team__hiden-title {
   color: #000000;
@@ -948,9 +960,7 @@ path {
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
-          background-size: cover;
-  width: 100%;
-  height: 100%; }
+          background-size: cover; }
   .section-menu:after {
     content: "";
     position: absolute;
@@ -1015,7 +1025,7 @@ path {
     display: block;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1; }
-  .accordeon__title:visited {
+  .accordeon__title:visited, .accordeon__title:active, .accordeon__title:focus {
     color: #ffffff; }
 
 .accordeon__title-text {
@@ -1086,7 +1096,8 @@ path {
   background-image: url(../images/sec6/raspberry.png);
   background-repeat: no-repeat;
   background-position: right 0;
-  margin-bottom: 1.875rem; }
+  margin-bottom: 1.875rem;
+  overflow: hidden; }
   .comment__content-main::after {
     content: '';
     position: absolute;
@@ -1101,14 +1112,31 @@ path {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%); }
 
-.comment__item {
-  display: none; }
-
-.comment__item--active {
+.comment__list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 100%;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  -o-transition: transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s; }
+
+.comment__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  padding-top: 3.3125rem;
+  padding-left: 3.9375rem;
+  padding-right: 3.9375rem;
+  position: relative; }
 
 .comment__avatar {
   width: 15.875rem;
@@ -1651,7 +1679,7 @@ path {
     .team__common:last-child {
       margin-bottom: 0; }
   .team__foto {
-    display: none;
+    height: 0;
     padding-top: 2vmin; }
   .team__title {
     font-size: 4vw;
@@ -1664,8 +1692,8 @@ path {
     font-size: 3.2vw;
     font-weight: 600;
     margin-bottom: 1vmin; }
-  .team__common--active .team__foto--open {
-    display: block; }
+  .team__common--active .team__foto {
+    height: 100%; }
   .accordeon__section.active .accordeon__content {
     width: 100%; }
   .accordeon__content-text {
@@ -1788,6 +1816,8 @@ path {
   .team__foto {
     width: 42%;
     margin: 0 auto 0.3rem; }
+  .team__title {
+    font-size: 5vw; }
   .section-team::before {
     width: 4.125rem;
     height: 4.125rem; }

@@ -31,7 +31,7 @@
 }
 .team__common{
   position: relative;
-  width: 100%;
+  width: 100%; 
   margin-right: 1.25rem;
   text-align: center;
     &:last-child{
@@ -44,13 +44,14 @@
       transform: rotate(180deg);
     }
     .team__hiden{
-      display: block;
+      height: 100%;
     } 
 }
 
 .team__foto{
   margin-bottom: 1.625rem;
 }
+
 .team__foto-img{
   width: 100%;
   height: 100%;
@@ -64,6 +65,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .team__title-name{
   margin-right: 0.4375rem;
@@ -76,7 +78,8 @@
   border-top: 6px solid $green;
 }
 .team__hiden{
-  display: none; 
+  height: 0;
+  overflow: hidden;
 }
 
 .team__hiden-title{

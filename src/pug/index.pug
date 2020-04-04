@@ -6,13 +6,14 @@ html(lang="ru")
       include template/_modal
       include template/_mobile-menu
       include template/_pagination
-      include template/_section-1_main
-      include template/_section-2_why
-      include template/_section-3_slider
-      include template/_section-4_team
-      include template/_section-5_menu
-      include template/_section-6_comment
-      include template/_section-7_work
-      include template/_section-8_form    
-      include template/_section-9_map
+      main.main-content#mainContent
+        include template/_section-1_main
+        include template/_section-2_why
+        include template/_section-3_slider
+        include template/_section-4_team
+        include template/_section-5_menu
+        include template/_section-6_comment
+        include template/_section-7_work
+        include template/_section-8_form    
+        include template/_section-9_map
     include base/_scripts
