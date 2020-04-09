@@ -387,12 +387,243 @@ reviewsSlider.target.addEventListener('click', function (e) {
   })
 })()
 
+//////// ФОРМА ////////
+
+const orderForm = document.querySelector('#orderForm');
+// const submitBtn = document.querySelector('#submitBtn');
+submitBtn = orderForm.elements.submit;
+
+submitBtn.addEventListener('click', function (event) {
+
+  if (orderForm.checkValidity()) {
+    event.preventDefault();
+    const data = new FormData();
+    data.append("name", orderForm.elements.username.value);
+    data.append("phone", orderForm.elements.phone.value);
+    data.append("comment", orderForm.elements.comment.value);
+    data.append("to", "avacode777@yandex.ru");
+
+    orderForm.elements.reset.click();
+
+    // Создание AJAX запроса
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail/fail', true);
+    xhr.responseType = 'json';
+    xhr.send(data);
+
+    // Создание экземпляра модального окна
+    var modal = new Overlay('#overlayTemplate');
+
+    // Высвечивание модального окна(окно ожидания ответа)
+    modal.toggleClsButtonVisibility();
+    modal.openOverlay("Ожидание ответа сервера");
+
+    // Обработчик события ответа от сервера
+    xhr.addEventListener('load', () => {
+      modal.toggleClsButtonVisibility();
+
+      // Смена текста в модальном окне
+      modal.changeMessage(xhr.response.message);
+    });
+  }
+});
+
+//МОДАЛКА
+function Overlay(templateSelector) {
+  const template = document.querySelector(templateSelector);
+  const overlay = createOverlay(template);
+  const backGround = overlay.querySelector('.overlay');
+  const msgContainer = overlay.querySelector('.modal__title');
+  const closeBtn = overlay.querySelector('button');
+
+  function createOverlay() {
+    let overlay = document.createElement('div');
+    overlay.innerHTML = template.innerHTML;
+    return overlay;
+  }
+
+  this.openOverlay = (message) => {
+    document.body.appendChild(overlay);
+    msgContainer.textContent = message;
+    document.body.style.overflow = 'hidden';
+  }
+
+  this.closeOverlay = () => {
+    document.body.removeChild(overlay);
+    document.body.style.overflow = '';
+  }
+
+  this.changeMessage = (newMessage) => {
+    msgContainer.textContent = newMessage;
+  }
+
+  var eventHandler = (e) => {
+    e.preventDefault();
+    if (e.target === closeBtn || e.target === backGround) {
+      this.closeOverlay();
+    }
+  }
+
+  var isCloseBtnVisible = true;
+
+  this.toggleClsButtonVisibility = () => {
+
+    if (isCloseBtnVisible) {
+      closeBtn.style.display = 'none';
+      isCloseBtnVisible = false;
+      overlay.removeEventListener('click', eventHandler);
+    } else {
+      closeBtn.style.display = '';
+      isCloseBtnVisible = true;
+      overlay.addEventListener('click', eventHandler);
+    }
+  }
+
+  overlay.addEventListener('click', eventHandler);
+
+}
+
+
+// //////// СКРОЛЛ СЕКЦИЙ ////////
+
+function OnePage(selector) {
+
+  this.container = $(selector); //Родитель слайдов
+  this.slides = this.container.children(); //Объект со слайдами
+  var viewport = $(window); //Объект окна
+  this.slidesCount = this.slides.length;//Кол-во слайдов
+  var slideHeight = this.slides.outerHeight();//Высота слайда
+  this.slideIndex = this.slides.first().index();//Номер слайда, от 0
+
+  var isScrollDown; // 
+
+  //Переменные связанные с пагинацией
+  var pagList,
+    pagItems,
+    activePagItem,
+    pagButton,
+    activePagClass;
+  //Ф-я добавления пагинации(опционально)
+  this.addPagination = (selector, item, activeClass) => {
+    pagList = $(selector);
+    activePagClass = activeClass;
+
+    this.slides.each((ndx) => {
+      let clone = item.clone();
+      clone.find('a').attr('data-vector', `${ndx}`);
+      clone.appendTo(pagList);
+    })
+
+    pagItems = pagList.children();
+    activePagItem = pagItems.eq(this.slideIndex);
+    activePagItem.addClass(activePagClass);
+
+    pagList.on('click', '[data-vector]', (e) => {
+      e.preventDefault();
+      pagButton = $(e.target);
+      this.slideIndex = pagButton.attr('data-vector');
+      this.changeSlide(this.slideIndex);
+
+      activePagItem.removeClass(activePagClass);
+      activePagItem = pagButton.parent();
+      activePagItem.addClass(activePagClass);
+
+    });
+  }
+
+  // Ограничение кол-ва вызовов переданной ф-ии
+  var isDelayOn;
+  function debounce(foo, time) {
+    if (isDelayOn) {
+      //do nothing
+    } else {
+      isDelayOn = true;
+      window.setTimeout(() => {
+        isDelayOn = false;
+      }, time);
+      foo();
+    }
+  }
+
+
+
+  //Смена индекса слайда
+  this.changeIndex = (isNext, index) => {
+    if (isNext && index < this.slidesCount - 1) {
+      index++;
+    } else if (!isNext && index > 0) {
+      index--;
+    }
+    return index;
+  }
+
+  //Смена слайда по индексу
+  this.changeSlide = (index) => {
+    $('html, body').stop(true, false).animate({
+      'scrollTop': (index * slideHeight)
+    }, 600);
+
+    //Если добавлена пагинация
+    if (pagList) {
+      activePagItem.removeClass(activePagClass);
+      activePagItem = pagItems.eq(index);
+      activePagItem.addClass(activePagClass);
+    }
+  }
+
+  this.wheelResponse = (isDown) => {
+    if (isDown) {
+      isScrollDown = true;
+      this.slideIndex = this.changeIndex(isScrollDown, this.slideIndex);
+      this.changeSlide(this.slideIndex);
+    } else {
+      isScrollDown = false;
+      this.slideIndex = this.changeIndex(isScrollDown, this.slideIndex);
+      this.changeSlide(this.slideIndex);
+    }
+  }
+
+  //Обраб-к соб-й на прокрутку мыши 
+  viewport.on('wheel', (event) => {
+
+    var isDown = event.originalEvent.deltaY > 0 ? true : false;
+    debounce(() => { this.wheelResponse(isDown) }, 600);
+  })
+
+  //Обраб-к соб-й на свайп
+  var ts;
+  viewport.on('touchstart', (e) => {
+    ts = e.originalEvent.touches[0].clientY;
+  });
+
+  viewport.on('touchmove', (e) => {
+    var te = e.originalEvent.changedTouches[0].clientY;
+    var isDown;
+    if (ts > te) {
+      isDown = true;
+    } else {
+      isdown = false;
+    }
+    debounce(() => { this.wheelResponse(isDown) }, 600);
+  });
+
+}
+
+var scroll = new OnePage('#mainContent');
+
+var paginItem = $('<li>', {
+  attr: { 'class': 'pagination__item' }
+});
+paginItem.html('<a href="" class="pagination__link"></a>');
+
+scroll.addPagination('#mainPagination', paginItem, 'pagination__item--active');
+
 
 //////// КАРТА ////////
 
 ymaps.ready(init);
 
-var placemarks =  [
+var placemarks = [
   {
     latitude: 55.759213,
     longitude: 37.580373,
@@ -427,7 +658,7 @@ function init() {
     behaviors: ['drag']
   });
 
-  placemarks.forEach(function(obj) {
+  placemarks.forEach(function (obj) {
     var placemark = new ymaps.Placemark([obj.latitude, obj.longitude], {
       hintContent: obj.hintContent,
       balloonContent: obj.balloonContent
@@ -440,247 +671,6 @@ function init() {
       });
 
     map.geoObjects.add(placemark);
-  });  
- 
-}
-
-//////// ФОРМА ////////
-
-const orderForm = document.querySelector('#orderForm');
-// const submitBtn = document.querySelector('#submitBtn');
-submitBtn = orderForm.elements.submit;
-
-// Обработчик событий на кнопку "Заказать"
-submitBtn.addEventListener('click', function (event) {
-
-  // Если форма не валидна, браузер будет выводить стандартные сообщения валидности
-  // Если валидна, выполнится код ниже
-  if (orderForm.checkValidity()) {
-    event.preventDefault();
-    // Создание экземпляра объекта FormData
-    const data = new FormData();
-    data.append("name", orderForm.elements.username.value);
-    data.append("phone", orderForm.elements.phone.value);
-    data.append("comment", orderForm.elements.comment.value);
-    data.append("to", "avacode777@yandex.ru");
-
-    //Очистка формы
-    orderForm.elements.reset.click();
-
-    // Создание AJAX запроса
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail', true);
-    xhr.responseType = 'json';
-    xhr.send(data);
-
-    // Создание экземпляра модального окна
-    var modal = new Overlay('#overlayTemplate');
-
-    // Высвечивание модального окна(окно ожидания ответа)
-    modal.toggleClsButtonVisibility();
-    modal.openOverlay("Ожидание ответа сервера");
-
-    // Обработчик события ответа от сервера
-    xhr.addEventListener('load', () => {
-      modal.toggleClsButtonVisibility();
-
-      // Смена текста в модальном окне
-      modal.changeMessage(xhr.response.message);
-    });
-  }
-});
-
-//МОДАЛКА
-function Overlay(templateSelector) {
-  const template = document.querySelector(templateSelector);
-  const overlay = createOverlay(template);
-  const backGround = overlay.querySelector('.overlay');
-  const msgContainer = overlay.querySelector('.modal__title');
-  const closeBtn = overlay.querySelector('button');
-
-  //создание модалки
-  function createOverlay() {
-    let overlay = document.createElement('div');
-    overlay.innerHTML = template.innerHTML;
-    return overlay;
-  }
-
-  //Появление модалки(добавление в DOM-дерево)
-  this.openOverlay = (message) => {
-    document.body.appendChild(overlay);
-    msgContainer.textContent = message;
-    document.body.style.overflow = 'hidden';
-  }
-
-  //Удаление модалки(из DOM-дерева)
-  this.closeOverlay = () => {
-    document.body.removeChild(overlay);
-    document.body.style.overflow = '';
-  }
-
-  // Метод изменяет текст сообщения в модалке
-  this.changeMessage = (newMessage) => {
-    msgContainer.textContent = newMessage;
-  }
-
-  //Метод в обработчике событий на кнопку закрыть и внешнюю область
-  var eventHandler = (e) => {
-    e.preventDefault();
-    if (e.target === closeBtn || e.target === backGround) {
-      this.closeOverlay();
-    }
-  }
-
-  var isCloseBtnVisible = true;
-  //Переключение видимости кнопки закрыть, и возможности нажать на внешнюю область
-  this.toggleClsButtonVisibility = () => {
-
-    if (isCloseBtnVisible) {
-      closeBtn.style.display = 'none';
-      isCloseBtnVisible = false;
-      overlay.removeEventListener('click', eventHandler);
-    } else {
-      closeBtn.style.display = '';
-      isCloseBtnVisible = true;
-      overlay.addEventListener('click', eventHandler);
-    }
-  }
-
-  overlay.addEventListener('click', eventHandler);
+  });
 
 }
-
-
-// //////// СКРОЛЛ СЕКЦИЙ ////////
-
-// function OnePage(selector) {
-
-//   this.container = $(selector); //Родитель слайдов
-//   this.slides = this.container.children(); //Объект со слайдами
-//   var viewport = $(window); //Объект окна
-//   this.slidesCount = this.slides.length;//Кол-во слайдов
-//   var slideHeight = this.slides.outerHeight();//Высота слайда
-//   this.slideIndex = this.slides.first().index();//Номер слайда, от 0
-
-//   var isScrollDown; // 
-
-//   //Переменные связанные с пагинацией
-//   var pagList,
-//     pagItems,
-//     activePagItem,
-//     pagButton,
-//     activePagClass;
-//   //Ф-я добавления пагинации(опционально)
-//   this.addPagination = (selector, item, activeClass) => {
-//     pagList = $(selector);
-//     activePagClass = activeClass;
-
-//     this.slides.each((ndx) => {
-//       let clone = item.clone();
-//       clone.find('a').attr('data-vector', `${ndx}`);
-//       clone.appendTo(pagList);
-//     })
-
-//     pagItems = pagList.children();
-//     activePagItem = pagItems.eq(this.slideIndex);
-//     activePagItem.addClass(activePagClass);
-
-//     pagList.on('click', '[data-vector]', (e) => {
-//       e.preventDefault();
-//       pagButton = $(e.target);
-//       this.slideIndex = pagButton.attr('data-vector');
-//       this.changeSlide(this.slideIndex);
-
-//       activePagItem.removeClass(activePagClass);
-//       activePagItem = pagButton.parent();
-//       activePagItem.addClass(activePagClass);
-
-//     });
-//   }
-
-//   // Ограничение кол-ва вызовов переданной ф-ии
-//   var isDelayOn;
-//   function debounce(foo, time) {
-//     if (isDelayOn) {
-//       //do nothing
-//     } else {
-//       isDelayOn = true;
-//       window.setTimeout(() => {
-//         isDelayOn = false;
-//       }, time);
-//       foo();
-//     }
-//   }
-
-
-
-//   //Смена индекса слайда
-//   this.changeIndex = (isNext, index) => {
-//     if (isNext && index < this.slidesCount - 1) {
-//       index++;
-//     } else if (!isNext && index > 0) {
-//       index--;
-//     }
-//     return index;
-//   }
-
-//   //Смена слайда по индексу
-//   this.changeSlide = (index) => {
-//     $('html, body').stop(true, false).animate({
-//       'scrollTop': (index * slideHeight)
-//     }, 600);
-
-//     //Если добавлена пагинация
-//     if (pagList) {
-//       activePagItem.removeClass(activePagClass);
-//       activePagItem = pagItems.eq(index);
-//       activePagItem.addClass(activePagClass);
-//     }
-//   }
-
-//   this.wheelResponse = (isDown) => {
-//     if (isDown) {
-//       isScrollDown = true;
-//       this.slideIndex = this.changeIndex(isScrollDown, this.slideIndex);
-//       this.changeSlide(this.slideIndex);
-//     } else {
-//       isScrollDown = false;
-//       this.slideIndex = this.changeIndex(isScrollDown, this.slideIndex);
-//       this.changeSlide(this.slideIndex);
-//     }
-//   }
-
-//   //Обраб-к соб-й на прокрутку мыши 
-//   viewport.on('wheel', (event) => {
-
-//     var isDown = event.originalEvent.deltaY > 0 ? true : false;
-//     debounce(() => { this.wheelResponse(isDown) }, 600);
-//   })
-
-//   //Обраб-к соб-й на свайп
-//   var ts;
-//   viewport.on('touchstart', (e) => {
-//     ts = e.originalEvent.touches[0].clientY;
-//   });
-
-//   viewport.on('touchmove', (e) => {
-//     var te = e.originalEvent.changedTouches[0].clientY;
-//     var isDown;
-//     if (ts > te) {
-//       isDown = true;
-//     } else {
-//       isdown = false;
-//     }
-//     debounce(() => { this.wheelResponse(isDown) }, 600);
-//   });
-
-// }
-
-// var scroll = new OnePage('#mainContent');
-
-// var paginItem = $('<li>', {
-//   attr: { 'class': 'pagination__item' }
-// });
-// paginItem.html('<a href="" class="pagination__link"></a>');
-
-// scroll.addPagination('#mainPagination', paginItem, 'pagination__item--active');
