@@ -440,9 +440,23 @@ path {
   position: relative;
   border: 1px solid transparent;
   -webkit-border-radius: 50%;
-          border-radius: 50%; }
+          border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: border .4s;
+  -o-transition: border .4s;
+  transition: border .4s; }
   .pagination__item:last-child {
     margin-bottom: 0; }
+  .pagination__item:hover {
+    border: 1px solid #0b4d3c;
+    -webkit-transition: border .4s;
+    -o-transition: border .4s;
+    transition: border .4s; }
+    .pagination__item:hover .pagination__link {
+      background-color: #0b4d3c;
+      -webkit-transition: background-color .4s;
+      -o-transition: background-color .4s;
+      transition: background-color .4s; }
 
 .pagination__link {
   position: absolute;
@@ -455,7 +469,10 @@ path {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%; }
+  top: 50%;
+  -webkit-transition: background-color .4s;
+  -o-transition: background-color .4s;
+  transition: background-color .4s; }
 
 .pagination__item--active {
   border: 1px solid #ffffff; }
@@ -1301,6 +1318,8 @@ path {
   width: 1rem;
   height: 1.375rem;
   position: relative; }
+  .player__btn:hover .player__play-grey {
+    fill: #ffffff; }
 
 .player__play-white {
   fill: #ffffff; }
@@ -1349,6 +1368,8 @@ path {
 
 .player__vol {
   width: 1.125rem; }
+  .player__vol:hover .player__volume-grey {
+    fill: #ffffff; }
 
 .player__volume-btn {
   left: 100%; }

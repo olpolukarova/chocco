@@ -495,7 +495,7 @@ function OnePage(selector) {
   var slideHeight = this.slides.outerHeight();//Высота слайда
   this.slideIndex = this.slides.first().index();//Номер слайда, от 0
 
-  var isScrollDown; // 
+  var isScrollDown;
 
   //Переменные связанные с пагинацией
   var pagList,
@@ -618,6 +618,14 @@ paginItem.html('<a href="" class="pagination__link"></a>');
 
 scroll.addPagination('#mainPagination', paginItem, 'pagination__item--active');
 
+// Обработчик событий на меню
+$('body').on('click', '[href*="#"]', (e) => {
+  e.preventDefault();
+  let item = $(e.target.hash);
+
+  scroll.slideIndex = item.index();
+  scroll.changeSlide(scroll.slideIndex);
+});
 
 //////// КАРТА ////////
 
