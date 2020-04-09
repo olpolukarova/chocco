@@ -1,4 +1,24 @@
+@media screen and (max-width: 650px){
+  .player{
+    max-width: 24rem;
+  }
+  .player__splash{
+    width: 4.125rem;
+  }
+  .player__controls{
+    padding: 0 0.625rem;
+  }
+  .player__playback{
+    width: 14.7rem;
+  }
+}
 @media screen and (max-width: 480px){
+  .modal{
+    padding: 1.375rem 1.75rem;
+  }
+  .modal__title{
+    margin-bottom: 10px;
+  }
   html{
     font-size: 11px;
   }

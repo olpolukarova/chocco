@@ -2,15 +2,18 @@ section.section.section-work#sec7
   .container
     .center.center--work
       h2.title Как мы работаем
-      .work
-        .work__content
-          video.work__video(src="./images/sec7/clams.mp4" width="660" height="370" preload="none" poster="./images/sec7/poster.jpg" loop muted controls)#video-player
+      .player
+        .player__wrap
+          video.player__video(src="./images/sec7/clams.mp4" preload="none" poster="./images/sec7/poster.jpg")#player__video
             source(src="video.mp4" type="video/mp4")
-        //- .work__content
-        //-   .work__elements
-        //-     .work__elements-play
-        //-     .work__elements-progress
-        //-       input(type="range")
-        //-     .work__elements-volume
-        //-       .volume-ico
-        //-       input(type="range")
+          .player__splash
+            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 22" style="enable-background:new 0 0 16 22;" xml:space="preserve"><style type="text/css"></style><path class="player__play-white" d="M0,2.4v17.2c0,1.9,2,3.1,3.5,2L15,13c1.3-0.9,1.3-3,0-3.9L3.5,0.4C2-0.7,0,0.5,0,2.4z"/></svg>
+        .player__controls
+          button.player__btn.player__play
+            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 22" style="enable-background:new 0 0 16 22;" xml:space="preserve"><style type="text/css"></style><path class="player__play-grey" d="M0,2.4v17.2c0,1.9,2,3.1,3.5,2L15,13c1.3-0.9,1.3-3,0-3.9L3.5,0.4C2-0.7,0,0.5,0,2.4z"/></svg>
+          .player__playback
+            button.player__btn.player__btn--circle.player__playback-btn 
+          button.player__btn.player__vol
+            <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 22" style="enable-background:new 0 0 18 22;" xml:space="preserve"><style type="text/css"></style><path class="player__volume-grey" d="M15.9,0.3L7.4,6.6C6.7,6.2,5.9,6,5,6c-2.8,0-5,2.2-5,5s2.2,5,5,5c0.9,0,1.7-0.2,2.4-0.6l8.5,6.4 c0.9,0.7,2.1,0,2.1-1.1V1.4C18,0.3,16.8-0.4,15.9,0.3z"/></svg>
+          .player__volume
+            button.player__btn.player__btn--circle.player__volume-btn

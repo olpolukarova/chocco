@@ -2,15 +2,15 @@ section.section.section-form#sec8
   .container
     .center.center--form
       h2.title.title--form Закажите доставку
-      form.form(action="")
+      form.form(action="")#orderForm
         .form__column
           .form__row
             label.form__label(for="")
               span.form__subtitle Имя
-              input.form__input(type="text" name='name' placeholder='Ольга' required="required")
+              input.form__input(type="text" name='username' placeholder='Ольга' required="required")
             label.form__label(for="")
               span.form__subtitle Телефон
-              input.form__input(type="tel" name='tel' placeholder='89022348912' required="required")
+              input.form__input(type="tel" name='phone' placeholder='89022348912' required="required")
           .form__row
             label.form__label(for="")
               span.form__subtitle Улица
@@ -32,7 +32,7 @@ section.section.section-form#sec8
           .form__row
             label.form__label(for="")
               span.form__subtitle Комментарий
-              textarea.form__textarea.form__input
+              textarea(name='comment').form__textarea.form__input
           .form__row-mb
             
               label.form__radio-label(for="change")
@@ -50,5 +50,5 @@ section.section.section-form#sec8
                 span.form__chec-custom
                 span.form__subtitle Не перезванивать
           .form__button
-            button.button.button--submit(type='submit') Заказать
-            button.button.button--reset(type='reset') Очистить
+            button.button.button--submit#submitBtn(type='submit' name="submit") Заказать
+            button.button.button--reset(type='reset' name="reset") Очистить
