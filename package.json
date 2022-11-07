@@ -14,7 +14,7 @@
     "babel-loader": "^8.0.4",
     "babel-preset-latest": "^6.24.1",
     "browser-sync": "^2.26.7",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^4.0.1",
